@@ -915,6 +915,7 @@ export default function Home() {
             <span>© 2026 EIBAD HASSAN SHAH</span>
             <div>
               <span>RIYADH / SAUDI ARABIA</span>
+              <Link href="/insights">INSIGHTS ↗</Link>
               <Link href="#top">BACK TO TOP ↑</Link>
             </div>
           </footer>
