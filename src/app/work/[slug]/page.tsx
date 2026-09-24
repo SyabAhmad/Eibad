@@ -3,12 +3,51 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { caseStudyImages, projects } from "@/app/portfolio-data";
+import { absoluteUrl, JsonLd, siteName } from "@/app/seo";
 
-export const metadata: Metadata = {
-  title: "Project Case Study — Eibad Hassan Shah",
-  description:
-    "A visual case study exploring architecture, coordination, construction, and spatial communication.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = projects.find((item) => item.slug === slug);
+
+  if (!project) {
+    return {};
+  }
+
+  return {
+    title: `${project.title} — Project Case Study`,
+    description: project.summary,
+    keywords: [
+      project.title,
+      project.category,
+      "architectural project case study",
+      "architectural documentation",
+    ],
+    alternates: {
+      canonical: `/work/${project.slug}`,
+    },
+    openGraph: {
+      type: "article",
+      url: `/work/${project.slug}`,
+      title: `${project.title} — Project Case Study`,
+      description: project.summary,
+      images: [
+        {
+          url: project.image,
+          alt: project.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} — Project Case Study`,
+      description: project.summary,
+    },
+  };
+}
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -26,8 +65,25 @@ export default async function ProjectPage({
     notFound();
   }
 
+  const projectSchema = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.summary,
+    url: absoluteUrl(`/work/${project.slug}`),
+    creator: {
+      "@type": "Person",
+      name: siteName,
+      url: absoluteUrl("/"),
+    },
+    about: project.scope,
+    image: project.image,
+  };
+
   return (
-    <main className="case-study">
+    <>
+      <JsonLd data={projectSchema} />
+      <main className="case-study">
       <header className="case-study__bar">
         <Link href="/#top">← EIBAD HASSAN SHAH</Link>
         <span>CASE STUDY / {project.number}</span>
@@ -111,6 +167,7 @@ export default async function ProjectPage({
         <Link href="/#work">← BACK TO SELECTED WORK</Link>
         <Link href="/#contact">START A CONVERSATION ↗</Link>
       </nav>
-    </main>
+      </main>
+    </>
   );
 }
