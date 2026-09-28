@@ -40,3 +40,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw source material - kept on disk, never committed.
+# The processed, web-ready versions live in public/projects/ and ARE tracked.
+# HEIC and camera-original files are not browser-renderable and would bloat the repo.
+/public/CDC/
+/public/French Fries Fectory/
+/public/Nupco/
+/public/RED SEA - CTH and QC lab/
+/public/Riyadh Air Academy/
+
+# large reference documents (~139MB total, marked confidential by their authors).
+# Kept locally for reference; excluded so they are never pushed or deployed.
+/public/YMCO Company Profile (1).pdf
+/public/RX Training Center (Interior Visuals) 20241217.pdf
+/public/RX Training Centre Architectural Elevations Updates_Sent to YMCO.pdf

@@ -10,6 +10,8 @@ import {
   education,
   expertise,
   experience,
+  featuredProject,
+  padNumber,
   professionalFocus,
   projects,
   registrations,
@@ -24,6 +26,9 @@ const navItems = [
   { label: "Expertise", href: "#expertise" },
   { label: "Contact", href: "#contact" },
 ];
+
+/** Repeating rhythm for the project spread grid, so any number of projects still alternates. */
+const spreadVariants = ["wide", "offset", "narrow", "offset", "wide"] as const;
 
 const disciplines = ["ARCHITECTURE", "CONSTRUCTION", "3D VISUALIZATION"];
 const careerPath = [
@@ -40,7 +45,6 @@ export default function Home() {
   const [expandedRole, setExpandedRole] = useState<string | null>(null);
   const [activeExpertise, setActiveExpertise] = useState<string | null>(null);
   const [isWhatsAppOpening, setIsWhatsAppOpening] = useState(false);
-  const featuredProject = projects[0];
 
   useEffect(() => {
     const updateNavigation = () => setIsScrolled(window.scrollY > 24);
@@ -221,7 +225,9 @@ export default function Home() {
                 />
                 <div className="featured-project__overlay" />
                 <span className="featured-project__label">FEATURED PROJECT</span>
-                <span className="featured-project__number">01 / 06</span>
+                <span className="featured-project__number">
+                  {featuredProject.number} / {padNumber(projects.length)}
+                </span>
                 <span className="featured-project__view">
                   VIEW PROJECT <span aria-hidden="true">↗</span>
                 </span>
@@ -266,11 +272,11 @@ export default function Home() {
               </div>
               <div className="selected-work__facts">
                 <div>
-                  <strong>03</strong>
+                  <strong>{padNumber(projects.length)}</strong>
                   <span>FEATURED PROJECTS</span>
                 </div>
                 <div>
-                  <strong>04</strong>
+                  <strong>{padNumber(expertise.length)}</strong>
                   <span>DISCIPLINES</span>
                 </div>
                 <p>Architecture, construction, and visual experiences.</p>
@@ -280,9 +286,7 @@ export default function Home() {
             <div className="project-spreads">
               {projects.map((project, index) => (
                 <article
-                  className={`project-spread project-spread--${
-                    index === 0 ? "wide" : index === 1 ? "offset" : "narrow"
-                  }`}
+                  className={`project-spread project-spread--${spreadVariants[index % spreadVariants.length]}`}
                   key={project.slug}
                 >
                   <div className="project-spread__number">{project.number}</div>
@@ -340,7 +344,9 @@ export default function Home() {
                 </h3>
               </div>
               <Link className="archive-link" href="#contact">
-                <span>03 / 03</span>
+                <span>
+                  {padNumber(projects.length)} / {padNumber(projects.length)}
+                </span>
                 VIEW ALL PROJECTS <span aria-hidden="true">↗</span>
               </Link>
             </div>
@@ -642,7 +648,6 @@ export default function Home() {
                         src={item.image}
                         alt=""
                         fill
-                        unoptimized
                         sizes="(max-width: 900px) 100vw, 78vw"
                       />
                       <div className="expertise-card__visual-overlay" />

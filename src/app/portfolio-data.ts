@@ -1,96 +1,68 @@
-export type Project = {
-  slug: string;
-  number: string;
-  title: string;
-  location: string;
-  year: string;
-  category: string;
-  image: string;
+import projectData from "@/data/projects.json";
+
+export type ProjectImage = {
+  src: string;
   alt: string;
+  label: string;
+  caption: string;
+  /** Discriminator so renders/drawings can be appended to a gallery later. */
+  kind: "photo" | "render" | "drawing" | "model" | "aerial";
+  /** Set when the visual is not Eibad's own work, e.g. designer-issued renders. */
+  credit: string | null;
+  width: number;
+  height: number;
+};
+
+export type Project = {
+  number: string;
+  slug: string;
+  title: string;
+  shortTitle: string;
+  subtitle: string;
+  client: string;
+  consultant: string;
+  contractor: string;
+  location: string;
+  site?: string;
+  area: string;
+  category: string;
+  status: string;
+  year: string;
+  yearSource: "documented" | "inferred";
   role: string;
   scope: string[];
   summary: string;
+  description: string;
+  highlights: string[];
+  spaces?: string[];
+  materials?: string[];
+  /** Card thumbnail. Landscape, cropped to aspect-ratio 1.55 / 1.42 / 1.28. */
+  image: string;
+  alt: string;
+  /** Case study hero. Full-bleed and tall (~0.7), so a different, often portrait, frame. */
+  heroImage: string;
+  heroImageAlt: string;
+  images: ProjectImage[];
+  sources: string[];
 };
 
-export const projectImages = [
-  "https://images.openai.com/static-rsc-4/HfsmPH8YyJ0gkxqHZ_L_ZGlid6WLbl6B-kwSPXefAIjvLNjMxHfjQqi2-6-hmdOSffi1M1PveGly5aex4yfepHp6XjRCvPFbg45-QeIxvGej1iw_L8QPsX-wTmx0DzFiykjWVM3DtlFR3gnYUdagigcNm2dgpSRYLWhXAqIXy090OTzDSb-cuQ3H6UFClRfb?purpose=fullsize",
-  "https://images.openai.com/static-rsc-4/dlotvLaEfZP4uFtt0LDE_w9xGl5VLYXDyc-JdMWlwFLWRkOe3VMX1IuVhLROhjJhUUtrl2uX-f2sSIMSaLe6FGfF3F4JGNtv_1oqZWVUqqQP3lHl0pdUBLa8b69Mw8iN5UBCiIpPlAHIYiSxrojIo6n7TYxyNG_lJ3g7zWEoDdzP3DLizR2FqGXQ3sKFW9aW?purpose=fullsize",
-  "https://images.openai.com/static-rsc-4/m7Pgv7izkqm-9SMnU3ZKajYM_egFsQ2crxcohMePcOU9M8gF-xkLxIOU6th5JVCAJZSuRLnLf5xrmkCXxi6QiauOS8M_Kj_R-e19qV4cdzzkM_S6Dk_bmkoyVYL9NciyYnaGvw8GeLzaAsEzpJDZ_ZOCJg3uVX25CGOxEV4Zj5XCZQwdpn-fo4momfgpWaav?purpose=fullsize",
-  "https://images.openai.com/static-rsc-4/wGFdbSF3wTE_iYs7SfD5AwpKsZVReKW9I3rmoGoqt43GNJ_tHTSw76WbsZlXODz3B0ZlvSUBkpB0n55B3BV_Mnq2DyPD0zPea51KKT20e22Z4ChvlMfjXstqFaJIFRRCuzlJnhzyG7Z2Eek8Ut_2_YotRTDxwed7Ta8TfviExBCGfBQt3f3KeqHVvfio1vu5?purpose=fullsize",
-  "https://images.openai.com/static-rsc-4/LGA7nglVYE2kmERSc_IL7wlRq8pe9SktY99eSorNLX8xCUlbdNXT1OQ4SMZ97b-D4iFqc3CeOc-Tvo_6f-adDM2mmPHKHaHyVKffLTNe75zRxguZCkVN2XX8Yj32gpaGaqbaO75fQX6YTa0cLjz2Agod_KFFku5Hv3W5ngMOva12mfCO28FpEMfumyi5hEjf?purpose=fullsize",
-  "https://images.openai.com/static-rsc-4/WnG_gXBtxW6s4lBDxLyBsJTW2pXBk92rvytdLg3RaIn_cD-xhhQvNoZxJgo767JQoCUoJ-aU7izEcg2GYsrE0RNazgkl9HDvSS1iuizVFrV4N0ah1yLPimGT5CaytgKk9giDejOSs0mNAzrFufFCBKgxZUfj6yMQW2tm753quopU7ig2rvbIO5UpulejypnV?purpose=fullsize",
-];
+export const projects: Project[] = projectData.projects as Project[];
+
+export const projectBySlug = (slug: string) =>
+  projects.find((project) => project.slug === slug);
+
+/**
+ * Drives the large hero treatment at the top of the homepage. Kept separate from
+ * the grid order so the strongest image can lead the page without renumbering the
+ * case studies. Falls back to the first project if the slug is ever removed.
+ */
+export const featuredProject: Project =
+  projectBySlug("nupco-al-jouf") ?? projects[0];
+
+export const padNumber = (value: number) => String(value).padStart(2, "0");
 
 export const aboutImage = "/eibad-profile.jpg";
 export const contactImage = "/contact-atmosphere.jpg";
-
-export const projects: Project[] = [
-  {
-    slug: "central-transportation-hub",
-    number: "01",
-    title: "Central Transportation Hub",
-    location: "Red Sea, Saudi Arabia",
-    year: "2024 — 2025",
-    category: "Architecture / Construction",
-    image: projectImages[0],
-    alt: "Architectural rendering of the Central Transportation Hub",
-    role: "Architectural Engineer",
-    scope: [
-      "Architecture",
-      "Construction",
-      "Project coordination",
-      "3D visualization",
-    ],
-    summary:
-      "A coordinated regional point of connection shaped through architecture, technical clarity, and delivery-focused coordination.",
-  },
-  {
-    slug: "residential-commercial-project",
-    number: "02",
-    title: "Residential / Commercial Project",
-    location: "Peshawar, Pakistan",
-    year: "Selected work",
-    category: "Design / 3D Visualization",
-    image: projectImages[1],
-    alt: "Architectural visualization for a residential and commercial project",
-    role: "Design & Visualization",
-    scope: ["Design", "3D visualization", "Presentation"],
-    summary:
-      "A spatial study that turns a mixed-use brief into a clear, atmospheric, and buildable visual language.",
-  },
-  {
-    slug: "interior-project",
-    number: "03",
-    title: "Interior Project",
-    location: "Saudi Arabia",
-    year: "Selected work",
-    category: "Interior / Spatial Identity",
-    image: projectImages[2],
-    alt: "Interior architecture visualization with layered natural light",
-    role: "Spatial Designer",
-    scope: ["Interior architecture", "Materials", "Visual identity"],
-    summary:
-      "An interior-focused study exploring proportion, material, and light as a quiet architectural experience.",
-  },
-];
-
-export const caseStudyImages = [
-  {
-    image: projectImages[3],
-    label: "Technical study / 01",
-    alt: "Technical architectural study for the project",
-  },
-  {
-    image: projectImages[4],
-    label: "Spatial study / 02",
-    alt: "Architectural spatial study for the project",
-  },
-  {
-    image: projectImages[5],
-    label: "Project image / 03",
-    alt: "Project visualization for the transportation hub",
-  },
-];
 
 export type ExperienceRole = {
   id: string;
@@ -181,12 +153,31 @@ export const experience: ExperienceRole[] = [
       "Client, consultant, and subcontractor coordination",
     ],
     projects: [
-      "Riyadh Air Training Center (GACA)",
-      "Red Sea projects — CTH, CDC, and QC-LAB",
+      "Riyadh Air Training Centre (GACA)",
+      "Red Sea Central Transportation Hub & QC Lab",
+      "Red Sea Central Distribution Center (CDC)",
+      "NUPCO Distribution Centre — Al Jouf",
+      "French Fries Processing Facility — Sudair",
     ],
     current: true,
   },
 ];
+
+/**
+ * Reuses a real project photograph for a discipline card and pulls its alt text
+ * from the same source, so the two can never drift apart.
+ */
+const disciplineImage = (src: string) => {
+  const match = projects
+    .flatMap((project) => project.images)
+    .find((image) => image.src === src);
+
+  if (!match) {
+    throw new Error(`Unknown discipline image: ${src}`);
+  }
+
+  return { image: src, imageAlt: match.alt };
+};
 
 export const expertise = [
   {
@@ -201,8 +192,9 @@ export const expertise = [
       "Design development",
       "Technical documentation",
     ],
-    image: projectImages[0],
-    imageAlt: "Architectural design visualization",
+    ...disciplineImage(
+      "/projects/riyadh-air-training-centre/02-entrance-elevation.jpg",
+    ),
   },
   {
     id: "construction-coordination",
@@ -216,8 +208,9 @@ export const expertise = [
       "Project documentation",
       "Execution support",
     ],
-    image: projectImages[1],
-    imageAlt: "Construction and coordination project visualization",
+    ...disciplineImage(
+      "/projects/french-fries-processing-facility/03-erection.jpg",
+    ),
   },
   {
     id: "3d-visualization",
@@ -231,8 +224,8 @@ export const expertise = [
       "Interior visualization",
       "Presentation imagery",
     ],
-    image: projectImages[2],
-    imageAlt: "3D architectural visualization study",
+    // Interim stand-in. Swap for a Revit / V-Ray / Lumion render once available.
+    ...disciplineImage("/projects/riyadh-air-training-centre/04-atrium.jpg"),
   },
   {
     id: "interior-design",
@@ -246,8 +239,9 @@ export const expertise = [
       "Interior concepts",
       "Visualization",
     ],
-    image: projectImages[3],
-    imageAlt: "Interior architecture visualization",
+    ...disciplineImage(
+      "/projects/red-sea-transportation-hub-qc-lab/04-reception.jpg",
+    ),
   },
 ];
 

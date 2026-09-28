@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "subject": "Eibad Hassan Shah",
+    "position": "BIM Architectural Engineer",
+    "employer": "Youssef Marroun Contracting Co. (YMCO)",
+    "tenure": "January 2024 — Present",
+    "location": "Riyadh, Saudi Arabia",
+    "note": "Scope of this file: ONLY the projects Eibad personally worked on, i.e. the 5 projects that have photographs in /public. The YMCO company profile lists 50+ projects; all others are deliberately excluded.",
+    "imageRoot": "/projects",
+    "factsSourcedFrom": [
+      "public/YMCO Company Profile (1).pdf — Youssef Marroun Contracting Co. company profile (87pp), portfolio section pp. 36-85",
+      "public/RX Training Center (Interior Visuals) 20241217.pdf — 'RX - Riyadh Air Flight Academy, 3D Visuals - Interior', Stylus ASD, 2024 (15pp)",
+      "public/RX Training Centre Architectural Elevations Updates_Sent to YMCO.pdf — 'Final Revised Elevations, aligned with KSIA guidelines' (5pp)"
+    ],
+    "imageConventions": {
+      "pathPattern": "/projects/<project-slug>/<nn>-<kebab-case-name>.jpg",
+      "maxWidth": 2400,
+      "quality": 82,
+      "heicConversionRequired": "public/Riyadh Air Academy/*.HEIC must be converted to JPEG — browsers cannot render HEIC",
+      "duplicatesFound": [
+        "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.36 AM.jpeg and ...at 9.08.37 AM.jpeg are byte-identical (md5 5bc0daa161); only the 9.08.36 copy is kept"
+      ],
+      "heroImage": "image = the card thumbnail (landscape, cropped to aspect-ratio 1.55/1.42/1.28). heroImage = the case study hero, which is full-bleed and TALL (~0.7 ratio), so it must be a different, preferably portrait, frame. CTH, CDC and French Fries have no portrait source, so their heroImage is a landscape photo centre-cropped into the tall frame."
+    },
+    "toConfirm": [
+      "CDC: YMCO profile says status 'On completed' (typo in source, read as 'Completed') and gives no year. Year 2025 — 2026 is inferred from the Red Sea cluster.",
+      "NUPCO Al Jouf: YMCO profile gives no year. 2024 — 2025 is inferred.",
+      "French Fries Processing Facility: YMCO profile gives no year. 2025 — PRESENT is inferred.",
+      "Riyadh Air interiors: Stylus ASD produced the interior visuals (Reception, Cafeteria, Classroom, Majlis, Office, Instructor's Room, Briefing Room, Corridor) and YMCO built it. Confirm how Eibad's contribution should be worded given the design authorship split."
+    ],
+    "futureRenders": {
+      "note": "Append entries to a project's images[] to add visualization work. Nothing else needs to change - the case study gallery, sitemap and /work/[slug] pages all read from images[].",
+      "allowedKinds": [
+        "photo",
+        "render",
+        "drawing",
+        "model",
+        "aerial"
+      ],
+      "kindMeaning": {
+        "photo": "site photography taken during the works",
+        "render": "3D visualization - set the matching tool in the caption",
+        "drawing": "technical drawing, shop drawing or sketch issued as part of the works",
+        "model": "physical or 3D model photography",
+        "aerial": "drone or satellite imagery"
+      },
+      "tools": [
+        "Revit",
+        "V-Ray",
+        "Lumion",
+        "Enscape",
+        "AutoCAD",
+        "SketchUp",
+        "Photoshop",
+        "Navisworks"
+      ],
+      "creditRule": "Set credit when a visual is NOT Eibad's own work. The Stylus ASD / Savills interior visuals and the KSIA elevation sheets for the Riyadh Air Training Centre are the designer's, so they must be credited rather than presented as his visualization.",
+      "placeholderNote": "Projects with no image yet can set image/heroImage to null; the card should then fall back to a coloured block using the project number rather than rendering a broken image."
+    }
+  },
+  "projects": [
+    {
+      "number": "01",
+      "slug": "riyadh-air-training-centre",
+      "title": "Riyadh Air Training Centre",
+      "shortTitle": "Riyadh Air Training Centre",
+      "subtitle": "Aircraft cabin crew training centre and simulators building, GACA Complex",
+      "client": "Riyadh Air",
+      "consultant": "Savills / Stylus",
+      "contractor": "Youssef Marroun Contracting Co.",
+      "location": "Riyadh, Saudi Arabia",
+      "site": "Airport Road, GACA Complex — King Salman International Airport District Master Plan",
+      "area": "11,560 m²",
+      "category": "Training Centre",
+      "status": "On Going",
+      "year": "2024 — Present",
+      "yearSource": "documented",
+      "role": "BIM Architectural Engineer",
+      "scope": [
+        "Architecture",
+        "Construction",
+        "Project coordination",
+        "3D visualization"
+      ],
+      "summary": "A 21 m high cabin crew training and simulators facility rising inside the GACA Complex, pairing a steel simulator hall with a three-level concrete building of classrooms, offices and administration space.",
+      "description": "A 21 metre high aircraft cabin crew training centre facility and simulators building located in the Airport Road GACA Complex. Made of a steel structure simulator building and a 3-level concrete building for the admin, offices, classrooms and facility areas.",
+      "spaces": [
+        "Reception",
+        "Cafeteria",
+        "Classroom",
+        "Majlis",
+        "Office",
+        "Instructor's Room",
+        "Briefing Room",
+        "Corridor"
+      ],
+      "materials": [
+        "Yellow Riyadh Stone — office building",
+        "Coregated coated metal — logistic buildings",
+        "Bronze metal — accent",
+        "Riyadh stone and dark metal — classroom buildings"
+      ],
+      "highlights": [
+        "21 m high cabin crew training centre and simulators building, 11,560 m²",
+        "Steel structure simulator hall plus a 3-level concrete classroom and office building",
+        "Interior programme of reception, cafeteria, classrooms, majlis, offices, instructor's room, briefing room and corridor",
+        "Final revised elevations aligned with KSIA guidelines — Riyadh stone, coregated coated metal and bronze accents"
+      ],
+      "image": "/projects/riyadh-air-training-centre/01-exterior-facade.jpg",
+      "heroImage": "/projects/riyadh-air-training-centre/02-entrance-elevation.jpg",
+      "heroImageAlt": "Entrance elevation of the training centre clad in tan stone with tall narrow vertical windows and a recessed entry",
+      "alt": "Riyadh Air Training Centre under construction with a tan Riyadh stone facade, a tower crane and the wider site works",
+      "images": [
+        {
+          "src": "/projects/riyadh-air-training-centre/01-exterior-facade.jpg",
+          "alt": "Riyadh Air Training Centre under construction with a tan Riyadh stone facade, a tower crane and the wider site works",
+          "label": "Exterior / 01",
+          "caption": "The tan Riyadh stone office volume against the wider site.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2069.HEIC",
+          "width": 4032,
+          "height": 3024,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/02-entrance-elevation.jpg",
+          "alt": "Entrance elevation of the training centre clad in tan stone with tall narrow vertical windows and a recessed entry",
+          "label": "Exterior / 02",
+          "caption": "Entrance bay — narrow vertical openings set into the stone cladding.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2058.HEIC",
+          "width": 3024,
+          "height": 4032,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/03-glazed-base.jpg",
+          "alt": "Glazed base of the training centre with full height curtain walling meeting a projecting tan stone upper volume",
+          "label": "Exterior / 03",
+          "caption": "Glazed base meeting the cantilevered stone volume.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2062.HEIC",
+          "width": 3024,
+          "height": 4032,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/04-atrium.jpg",
+          "alt": "Interior atrium with a dark stone feature wall, a white mezzanine soffit and a glass balustrade",
+          "label": "Interior / 04",
+          "caption": "Internal atrium and mezzanine edge.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2060.HEIC",
+          "width": 4032,
+          "height": 3024,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/05-mezzanine.jpg",
+          "alt": "Mezzanine level during fit out with a suspended linear lighting grid, dark timber volumes and a worker on the deck",
+          "label": "Interior / 05",
+          "caption": "Mezzanine fit out under the linear lighting grid.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2059.HEIC",
+          "width": 3024,
+          "height": 4032,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/06-interior-timber.jpg",
+          "alt": "Interior reception with a sculptural dark timber volume over a counter, lit by black track lighting",
+          "label": "Interior / 06",
+          "caption": "Reception joinery — sculptural timber volume under track lighting.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2061.HEIC",
+          "width": 3024,
+          "height": 4032,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/07-structure-erl.jpg",
+          "alt": "Exposed structural steel frame of the training centre with RL aviation lettering and the stone clad volume behind",
+          "label": "Structure / 07",
+          "caption": "Primary steel frame against the completed stone cladding.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2067.HEIC",
+          "width": 4032,
+          "height": 3024,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/08-construction-yard.jpg",
+          "alt": "Construction yard with mobile cranes, steel portal frames and stacked pipes on site",
+          "label": "Construction / 08",
+          "caption": "Site logistics and steel erection sequence.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2066.HEIC",
+          "width": 4032,
+          "height": 3024,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/09-site-overview.jpg",
+          "alt": "Wide view across the construction site showing the training centre volumes, the long logistics building and multiple cranes",
+          "label": "Site / 09",
+          "caption": "Site overview — training, classroom and logistics volumes together.",
+          "sourceFile": "public/Riyadh Air Academy/IMG_2068.HEIC",
+          "width": 4032,
+          "height": 3024,
+          "format": "heic",
+          "kind": "photo",
+          "credit": null
+        }
+      ],
+      "sources": [
+        "YMCO Company Profile (1).pdf, p. 42",
+        "RX Training Center (Interior Visuals) 20241217.pdf, pp. 1-2 (programme), pp. 4-15 (room visuals)",
+        "RX Training Centre Architectural Elevations Updates_Sent to YMCO.pdf, pp. 1-5 (cladding and elevations)"
+      ]
+    },
+    {
+      "number": "02",
+      "slug": "red-sea-transportation-hub-qc-lab",
+      "title": "Red Sea Central Transportation Hub & QC Lab",
+      "shortTitle": "Central Transportation Hub",
+      "subtitle": "Maintenance, repair and driver welfare facility for a regional transport fleet",
+      "client": "The Red Sea Real Estate Co.",
+      "consultant": "Khatib & Alami",
+      "contractor": "Youssef Marroun Contracting Co.",
+      "location": "Red Sea, West Region, Saudi Arabia",
+      "area": "9,053 m²",
+      "category": "Transportation Hub Building",
+      "status": "Completed",
+      "year": "2024 — 2025",
+      "yearSource": "documented",
+      "role": "Architectural Engineer / BIM Coordination",
+      "scope": [
+        "Architecture",
+        "Construction",
+        "Project coordination",
+        "3D visualization"
+      ],
+      "summary": "A 12 m high steel structure transport hub organised around maintenance bays, repair workshops and full driver welfare provision, delivered as a coordinated piece of regional infrastructure.",
+      "description": "A 12 m high steel structure building consisting of a maintenance area and repair shops for light goods vehicles and heavy goods vehicle buses, separated based on functional and operational requirements. The building also houses driver support and welfare areas, including washrooms, changing rooms, a shared canteen, lockers and a prayer room for all staff and drivers.",
+      "highlights": [
+        "12 m high steel structure maintenance and repair building",
+        "Light goods and heavy goods bus repair workshops, zoned by function",
+        "Full driver welfare suite — washrooms, changing rooms, shared canteen, lockers, prayer room",
+        "Architectural shop drawings and technical documentation for the completed works"
+      ],
+      "image": "/projects/red-sea-transportation-hub-qc-lab/01-exterior-plaza.jpg",
+      "heroImage": "/projects/red-sea-transportation-hub-qc-lab/01-exterior-plaza.jpg",
+      "heroImageAlt": "Exterior plaza of the Red Sea Central Transportation Hub with tensile shade canopies, curved concrete benches and a glazed terminal facade",
+      "alt": "Exterior plaza of the Red Sea Central Transportation Hub with tensile shade canopies, curved concrete benches and a glazed terminal facade",
+      "images": [
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/01-exterior-plaza.jpg",
+          "alt": "Exterior plaza of the Red Sea Central Transportation Hub with tensile shade canopies, curved concrete benches and a glazed terminal facade",
+          "label": "Exterior / 01",
+          "caption": "Terminal approach — tensile canopies, gravel plaza and curved concrete seating.",
+          "sourceFile": "public/RED SEA - CTH and QC lab/Screenshot 2026-09-28 222239.png",
+          "width": 568,
+          "height": 426,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/02-canteen.jpg",
+          "alt": "Shared canteen interior with a dark timber counter and a suspended linear timber slat ceiling",
+          "label": "Interior / 02",
+          "caption": "Driver shared canteen — timber counter and suspended slat rafters.",
+          "sourceFile": "public/RED SEA - CTH and QC lab/Screenshot 2026-09-28 222321.png",
+          "width": 582,
+          "height": 435,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/03-meeting-room.jpg",
+          "alt": "Bright meeting room with long tables, white cross-braced structural columns and full-height glazing",
+          "label": "Interior / 03",
+          "caption": "Meeting and coordination space beneath the exposed cross-braced frame.",
+          "sourceFile": "public/RED SEA - CTH and QC lab/Screenshot 2026-09-28 222353.png",
+          "width": 572,
+          "height": 426,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/04-reception.jpg",
+          "alt": "Reception area with a vertical timber slat partition, timber reception desk and a teal accent wall",
+          "label": "Interior / 04",
+          "caption": "Reception — vertical timber slats against a deep teal wall.",
+          "sourceFile": "public/RED SEA - CTH and QC lab/Screenshot 2026-09-28 222413.png",
+          "width": 571,
+          "height": 432,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        }
+      ],
+      "sources": [
+        "YMCO Company Profile (1).pdf, p. 37"
+      ]
+    },
+    {
+      "number": "03",
+      "slug": "nupco-al-jouf",
+      "title": "NUPCO — Al Jouf Distribution Centre",
+      "shortTitle": "NUPCO Al Jouf",
+      "subtitle": "20 m high temperature-controlled medical supplies warehouse",
+      "client": "National Unified Procurement Company (NUPCO)",
+      "consultant": "V3 Middle East",
+      "contractor": "Youssef Marroun Contracting Co.",
+      "location": "Al Jouf, Saudi Arabia",
+      "area": "35,000 m²",
+      "category": "Storage and Distribution Warehouse",
+      "status": "Completed",
+      "year": "2024 — 2025",
+      "yearSource": "inferred",
+      "role": "Architectural Engineer / BIM Coordination",
+      "scope": [
+        "Architecture",
+        "Construction",
+        "Project coordination",
+        "3D visualization"
+      ],
+      "summary": "A 20 m high pharmaceutical logistics centre built around temperature-controlled storage at a range of set points, with annexure buildings and provision for future expansion of NUPCO's supply needs.",
+      "description": "A 20 m high warehouse for the storage and distribution of medical supplies and equipment, including annexure buildings and infrastructure works on site. The warehouse includes temperature-controlled storage areas with a variety of temperature ranges, along with provision for future expansion to accommodate NUPCO's future needs.",
+      "highlights": [
+        "20 m high pharmaceutical warehouse, 35,000 m²",
+        "Temperature-controlled storage across a variety of temperature ranges",
+        "Annexure buildings and full on-site infrastructure works",
+        "Designed for future expansion as NUPCO's requirements grow"
+      ],
+      "image": "/projects/nupco-al-jouf/01-facade.jpg",
+      "heroImage": "/projects/nupco-al-jouf/03-facade-approach.jpg",
+      "heroImageAlt": "Angled approach view of the NUPCO Al Jouf warehouse showing the clad corner elevation, the glazed entrance and the landscaped verge",
+      "alt": "Main facade of the NUPCO Al Jouf distribution centre with the company logo above a recessed dark entrance",
+      "images": [
+        {
+          "src": "/projects/nupco-al-jouf/01-facade.jpg",
+          "alt": "Main facade of the NUPCO Al Jouf distribution centre with the company logo above a recessed dark entrance",
+          "label": "Exterior / 01",
+          "caption": "Main elevation and entrance canopy.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.37 AM (2).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/02-loading-docks.jpg",
+          "alt": "Long daytime elevation of the NUPCO warehouse showing loading dock bays numbered 25 to 30",
+          "label": "Exterior / 02",
+          "caption": "Loading elevation — numbered dock bays along the 20 m frame.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.37 AM (1).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/03-facade-approach.jpg",
+          "alt": "Angled approach view of the NUPCO Al Jouf warehouse showing the clad corner elevation, the glazed entrance and the landscaped verge",
+          "label": "Exterior / 03",
+          "caption": "Corner approach — clad elevation meeting the glazed entrance.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.37 AM (3).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/04-high-bay-warehouse.jpg",
+          "alt": "Automated high-bay warehouse with tall pallet racking, marked fire protection lanes and a long roof structure",
+          "label": "Interior / 04",
+          "caption": "High-bay storage hall with marked fire protection lanes.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.38 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/05-racking-overview.jpg",
+          "alt": "Wide view across the warehouse floor showing long runs of pallet racking and yellow floor marking",
+          "label": "Interior / 05",
+          "caption": "Storage floor plate and racking layout.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.41 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/06-racking-detail.jpg",
+          "alt": "Close view of orange pallet racking with sprinkler pipework running above the aisle",
+          "label": "Interior / 06",
+          "caption": "Racking and sprinkler coordination at aisle level.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.40 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/07-office.jpg",
+          "alt": "Open-plan office with rows of workstations under a suspended linear lighting grid",
+          "label": "Interior / 07",
+          "caption": "Warehouse office floor.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.38 AM (1).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/08-office-open-plan.jpg",
+          "alt": "Open-plan office desks beside full height windows looking out to the site",
+          "label": "Interior / 08",
+          "caption": "Open-plan workspace at the perimeter.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.38 AM (2).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/09-facade-night.jpg",
+          "alt": "Night view along the long NUPCO warehouse facade with canopies and street lighting",
+          "label": "Exterior / 09",
+          "caption": "The elevation after dark — canopy lighting across the loading run.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.39 AM (1).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/10-entrance-night.jpg",
+          "alt": "Night view of the NUPCO entrance elevation with landscaped verges and floodlit canopies",
+          "label": "Exterior / 10",
+          "caption": "Entrance landscape and lighting.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.39 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/11-loading-bays-night.jpg",
+          "alt": "Night view of the numbered loading bays 25 to 30 with dock levelers and yellow bollards",
+          "label": "Exterior / 11",
+          "caption": "Dock bays under floodlight.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.43 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/12-facade-night-2.jpg",
+          "alt": "Night elevation of the NUPCO warehouse with the company logo lit above the entrance",
+          "label": "Exterior / 12",
+          "caption": "Signage and entrance lighting.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.42 AM.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/13-facade-night-3.jpg",
+          "alt": "Night view along the glazed and clad NUPCO facade with floodlit columns",
+          "label": "Exterior / 13",
+          "caption": "Glazed facade bays at night.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.42 AM (1).jpeg",
+          "width": 1600,
+          "height": 1200,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/nupco-al-jouf/14-facade-detail.jpg",
+          "alt": "Close vertical view of the NUPCO warehouse facade showing blue and white panel cladding and a red and white kerb",
+          "label": "Exterior / 14",
+          "caption": "Panel cladding detail and kerb line.",
+          "sourceFile": "public/Nupco/WhatsApp Image 2026-09-27 at 9.08.36 AM.jpeg",
+          "width": 1200,
+          "height": 1600,
+          "format": "jpeg",
+          "kind": "photo",
+          "credit": null
+        }
+      ],
+      "sources": [
+        "YMCO Company Profile (1).pdf, p. 40"
+      ]
+    },
+    {
+      "number": "04",
+      "slug": "red-sea-central-distribution-center",
+      "title": "Red Sea Central Distribution Center",
+      "shortTitle": "Central Distribution Center",
+      "subtitle": "CDC — a 50,600 m² one-stop-shop logistics warehouse for the Red Sea corridor",
+      "client": "The Red Sea Real Estate Co.",
+      "consultant": "Khatib & Alami",
+      "contractor": "Youssef Marroun Contracting Co.",
+      "location": "Red Sea, West Region, Saudi Arabia",
+      "area": "50,600 m²",
+      "category": "Logistics Warehouse Building",
+      "status": "Completed",
+      "year": "2025 — 2026",
+      "yearSource": "inferred",
+      "role": "Architectural Engineer / BIM Coordination",
+      "scope": [
+        "Architecture",
+        "Construction",
+        "Project coordination",
+        "3D visualization"
+      ],
+      "summary": "A 14 m high steel structure logistics warehouse built as a single point of supply for the Red Sea corridor, combining bulk storage with a mezzanine office and a fitted racking system.",
+      "description": "A 14 m high steel structure logistics warehouse building for a 'one-stop-shop' service, covering bulk storage and delivery needs for a wide range of generic and brand-specific products including food, OS&E and consumables.",
+      "highlights": [
+        "14 m high steel structure logistics warehouse, 50,600 m²",
+        "One-stop-shop model — bulk storage and distribution in a single facility",
+        "Food, OS&E and consumables storage across a multi-tenant inventory",
+        "Inserted mezzanine office and fitted high-bay pallet racking"
+      ],
+      "image": "/projects/red-sea-central-distribution-center/01-exterior.jpg",
+      "heroImage": "/projects/red-sea-central-distribution-center/03-warehouse-interior.jpg",
+      "heroImageAlt": "Warehouse interior with orange pallet racking, a steel mezzanine, exposed red sprinkler mains and a worker on the floor",
+      "alt": "Long white and blue industrial warehouse facade of the Red Sea Central Distribution Center under a clear sky",
+      "images": [
+        {
+          "src": "/projects/red-sea-central-distribution-center/01-exterior.jpg",
+          "alt": "Long white and blue industrial warehouse facade of the Red Sea Central Distribution Center under a clear sky",
+          "label": "Exterior / 01",
+          "caption": "South elevation — the full 14 m steel frame read as a single horizontal band.",
+          "sourceFile": "public/CDC/Screenshot 2026-09-28 222458.png",
+          "width": 1064,
+          "height": 520,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/02-office-mezzanine.jpg",
+          "alt": "Open-plan mezzanine office with rows of workstations, linear ceiling lights and a glass balustrade overlooking the warehouse",
+          "label": "Interior / 02",
+          "caption": "Inserted mezzanine office overlooking the loading floor.",
+          "sourceFile": "public/CDC/Screenshot 2026-09-28 222533.png",
+          "width": 764,
+          "height": 418,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/03-warehouse-interior.jpg",
+          "alt": "Warehouse interior with orange pallet racking, a steel mezzanine, exposed red sprinkler mains and a worker on the floor",
+          "label": "Interior / 03",
+          "caption": "High-bay racking and mezzanine structure inside the warehouse.",
+          "sourceFile": "public/CDC/Screenshot 2026-09-28 222552.png",
+          "width": 664,
+          "height": 413,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        }
+      ],
+      "sources": [
+        "YMCO Company Profile (1).pdf, p. 38"
+      ]
+    },
+    {
+      "number": "05",
+      "slug": "french-fries-processing-facility",
+      "title": "French Fries Processing Facility",
+      "shortTitle": "French Fries Processing Facility",
+      "subtitle": "Sudair, Riyadh — 15 m high processing hall with a separate cold store",
+      "client": "Agricultural Growth and Processing Co.",
+      "consultant": "Shahin Engineering",
+      "contractor": "Youssef Marroun Contracting Co.",
+      "location": "Sudair, Riyadh, Saudi Arabia",
+      "area": "40,000 m²",
+      "category": "Factory Building",
+      "status": "On Going",
+      "year": "2025 — Present",
+      "yearSource": "inferred",
+      "role": "Architectural Engineer / BIM Coordination",
+      "scope": [
+        "Architecture",
+        "Construction",
+        "Project coordination",
+        "3D visualization"
+      ],
+      "summary": "A 15 m high steel processing facility across four floors including administration, paired with a separate 13 m high cold store and auxiliary buildings on a 40,000 m² site.",
+      "description": "A 15 m high processing facility steel building with 4 floors including Admin, and a separate cold store building 13 m high, plus auxiliary buildings.",
+      "highlights": [
+        "15 m high processing facility steel building with 4 floors including administration",
+        "Separate 13 m high cold store building",
+        "Auxiliary buildings across a 40,000 m² site",
+        "Full steel erection sequence, on site and ongoing"
+      ],
+      "image": "/projects/french-fries-processing-facility/01-steel-structure.jpg",
+      "heroImage": "/projects/french-fries-processing-facility/03-erection.jpg",
+      "heroImageAlt": "Steel frame erection with two red cranes lifting columns above a concrete foundation grid",
+      "alt": "Wide view of the french fries processing facility steel portal frame under erection with a red mobile crane on site",
+      "images": [
+        {
+          "src": "/projects/french-fries-processing-facility/01-steel-structure.jpg",
+          "alt": "Wide view of the french fries processing facility steel portal frame under erection with a red mobile crane on site",
+          "label": "Structure / 01",
+          "caption": "Primary portal frame erection across the 15 m span.",
+          "sourceFile": "public/French Fries Fectory/Screenshot 2026-09-28 222035.png",
+          "width": 1139,
+          "height": 486,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/french-fries-processing-facility/02-frame-interior.jpg",
+          "alt": "Interior of the steel frame showing precast concrete columns, roof purlins and workers on the slab",
+          "label": "Structure / 02",
+          "caption": "Precast columns within the steel frame.",
+          "sourceFile": "public/French Fries Fectory/Screenshot 2026-09-28 222119.png",
+          "width": 541,
+          "height": 402,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        },
+        {
+          "src": "/projects/french-fries-processing-facility/03-erection.jpg",
+          "alt": "Steel frame erection with two red cranes lifting columns above a concrete foundation grid",
+          "label": "Construction / 03",
+          "caption": "Column setting sequence over the foundation grid.",
+          "sourceFile": "public/French Fries Fectory/Screenshot 2026-09-28 222153.png",
+          "width": 567,
+          "height": 397,
+          "format": "png",
+          "kind": "photo",
+          "credit": null
+        }
+      ],
+      "sources": [
+        "YMCO Company Profile (1).pdf, p. 53"
+      ]
+    }
+  ]
+}
