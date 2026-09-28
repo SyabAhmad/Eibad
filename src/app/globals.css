@@ -4815,6 +4815,51 @@ button {
   color: var(--sand);
 }
 
+.article-hero__source {
+  max-width: 44rem;
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+.article-hero__project {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--paper-dark-line);
+  gap: 0.9rem;
+  transition: border-color 250ms ease, background-color 250ms ease;
+}
+
+.article-hero__project:hover {
+  border-color: var(--sand);
+  background-color: rgb(183 154 128 / 8%);
+}
+
+.article-hero__project > span:first-child {
+  color: var(--sand);
+  font-size: 0.62rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.article-hero__project strong {
+  flex: 1;
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.article-hero__project > span:last-child {
+  color: var(--paper);
+}
+
 .article-layout {
   display: grid;
   max-width: 80rem;

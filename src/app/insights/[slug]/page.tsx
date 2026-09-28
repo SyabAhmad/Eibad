@@ -8,7 +8,13 @@ import {
   insightArticles,
 } from "@/app/insights-data";
 import { InsightsHeader } from "@/app/insights/insights-header";
-import { absoluteUrl, JsonLd, siteName } from "@/app/seo";
+import { projects } from "@/app/portfolio-data";
+import {
+  absoluteUrl,
+  breadcrumbSchema,
+  JsonLd,
+  siteName,
+} from "@/app/seo";
 
 export function generateStaticParams() {
   return insightArticles.map((article) => ({ slug: article.slug }));
@@ -42,20 +48,15 @@ export async function generateMetadata({
       modifiedTime: article.updatedAt,
       authors: [siteName],
       tags: article.keywords,
-      images: [
-        {
-          url: "/eibad-profile.jpg",
-          width: 800,
-          height: 800,
-          alt: `Eibad Hassan Shah, ${article.title}`,
-        },
-      ],
+      // No images set on purpose. Setting them here would override the
+      // per-article opengraph-image.tsx file convention, which generates a
+      // 1200x630 card with the article's own title instead of a shared portrait.
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: ["/eibad-profile.jpg"],
+      // Left unset so Twitter/X falls back to the generated opengraph-image.
     },
   };
 }
@@ -74,6 +75,9 @@ export default async function InsightArticlePage({
 
   const relatedArticles = getRelatedArticles(article);
   const articleUrl = absoluteUrl(`/insights/${article.slug}`);
+  const project = article.projectSlug
+    ? projects.find((item) => item.slug === article.projectSlug)
+    : undefined;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -88,11 +92,13 @@ export default async function InsightArticlePage({
     dateModified: article.updatedAt,
     author: {
       "@type": "Person",
+      "@id": absoluteUrl("/#person"),
       name: siteName,
       url: absoluteUrl("/"),
     },
     publisher: {
       "@type": "Person",
+      "@id": absoluteUrl("/#person"),
       name: siteName,
       url: absoluteUrl("/"),
     },
@@ -105,9 +111,16 @@ export default async function InsightArticlePage({
     },
   };
 
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Portfolio", path: "/" },
+    { name: "Insights", path: "/insights" },
+    { name: article.category, path: "/insights" },
+  ]);
+
   return (
     <>
       <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbs} />
       <InsightsHeader compact />
       <main className="article-page">
         <nav className="article-breadcrumbs" aria-label="Breadcrumb">
@@ -134,6 +147,16 @@ export default async function InsightArticlePage({
               </time>
               <span>BY EIBAD HASSAN SHAH</span>
             </div>
+            {article.sourceNote && (
+              <p className="article-hero__source">{article.sourceNote}</p>
+            )}
+            {project && (
+              <Link className="article-hero__project" href={`/work/${project.slug}`}>
+                <span>PROJECT {project.number}</span>
+                <strong>{project.title}</strong>
+                <span aria-hidden="true">↗</span>
+              </Link>
+            )}
           </header>
 
           <div className="article-layout">

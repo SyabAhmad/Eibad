@@ -1,3 +1,5 @@
+import { projectArticles } from "@/data/insights-projects";
+
 export type InsightSection = {
   heading: string;
   paragraphs: string[];
@@ -16,9 +18,21 @@ export type InsightArticle = {
   intro: string;
   sections: InsightSection[];
   relatedSlugs: string[];
+  /**
+   * Slug of the matching case study in src/data/projects.json. When present the
+   * article renders a link to /work/<slug>, which is the internal link that
+   * tells search engines these two pages are about the same real project.
+   */
+  projectSlug?: string;
+  /**
+   * Where the factual claims in this article come from. Shown to readers so the
+   * provenance of a number is never a guess.
+   */
+  sourceNote?: string;
 };
 
 export const insightArticles: InsightArticle[] = [
+  ...projectArticles,
   {
     slug: "from-concept-to-construction-the-architectural-design-process",
     title: "From Concept to Construction: The Architectural Design Process",

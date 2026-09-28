@@ -4,7 +4,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Project } from "@/app/portfolio-data";
 import { padNumber, projectBySlug, projects } from "@/app/portfolio-data";
-import { absoluteUrl, JsonLd, siteName } from "@/app/seo";
+import {
+  absoluteUrl,
+  breadcrumbSchema,
+  JsonLd,
+  siteName,
+} from "@/app/seo";
 
 const caseMeta = (project: Project) => [
   { label: "YEAR", value: project.year },
@@ -124,9 +129,16 @@ export default async function ProjectPage({
     },
   };
 
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Portfolio", path: "/" },
+    { name: "Selected Work", path: "/#work" },
+    { name: project.shortTitle, path: `/work/${project.slug}` },
+  ]);
+
   return (
     <>
       <JsonLd data={projectSchema} />
+      <JsonLd data={breadcrumbs} />
       <main className="case-study">
         <header className="case-study__bar">
           <Link href="/#top">← EIBAD HASSAN SHAH</Link>
