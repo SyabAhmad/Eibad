@@ -13,6 +13,19 @@ export type ProjectImage = {
   height: number;
 };
 
+export type ProjectDrawing = {
+  src: string;
+  alt: string;
+  label: string;
+  title: string;
+  caption: string;
+  kind: "drawing" | "model" | "photo";
+  /** True while this entry points at a shared /public/drawings/placeholder. */
+  placeholder: boolean;
+  width: number;
+  height: number;
+};
+
 export type Project = {
   number: string;
   slug: string;
@@ -43,6 +56,8 @@ export type Project = {
   heroImage: string;
   heroImageAlt: string;
   images: ProjectImage[];
+  /** Technical drawings carousel at the bottom of the case study. */
+  drawings: ProjectDrawing[];
   sources: string[];
 };
 
@@ -296,7 +311,7 @@ export const professionalFocus = [
   "ARCHITECTURE",
   "CONSTRUCTION",
   "PROJECT COORDINATION",
-  "3D VISUALIZATION",
+  "TECHNICAL DOCUMENTATION",
   "INTERIOR DESIGN",
 ];
 

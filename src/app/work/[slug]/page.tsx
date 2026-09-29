@@ -10,6 +10,7 @@ import {
   JsonLd,
   siteName,
 } from "@/app/seo";
+import DrawingsCarousel from "./drawings-carousel";
 
 const caseMeta = (project: Project) => [
   { label: "YEAR", value: project.year },
@@ -245,6 +246,12 @@ export default async function ProjectPage({
             </figure>
           ))}
         </section>
+
+        <DrawingsCarousel
+          drawings={project.drawings}
+          projectNumber={project.number}
+          projectTitle={project.shortTitle}
+        />
 
         <nav className="case-next" aria-label="Case study navigation">
           <Link href={`/work/${previous.slug}`}>

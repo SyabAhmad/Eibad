@@ -32,11 +32,31 @@ const spreadVariants = ["wide", "offset", "narrow", "offset", "wide"] as const;
 
 const disciplines = ["ARCHITECTURE", "CONSTRUCTION", "3D VISUALIZATION"];
 const careerPath = [
-  "DESIGN",
-  "DOCUMENTATION",
-  "COORDINATION",
-  "CONSTRUCTION",
-  "PROJECT DELIVERY",
+  {
+    stage: "DESIGN",
+    detail:
+      "Concept development, space planning and design development from the first spatial idea.",
+  },
+  {
+    stage: "DOCUMENTATION",
+    detail:
+      "Shop drawings, technical packages and BIM models that carry the design into the field.",
+  },
+  {
+    stage: "COORDINATION",
+    detail:
+      "Resolving the interface between architecture, structure and MEP before anything is built.",
+  },
+  {
+    stage: "CONSTRUCTION",
+    detail:
+      "Site coordination, quality control and Saudi Building Code compliance on live projects.",
+  },
+  {
+    stage: "PROJECT DELIVERY",
+    detail:
+      "Client, consultant and subcontractor coordination through to handover.",
+  },
 ];
 
 export default function Home() {
@@ -279,7 +299,7 @@ export default function Home() {
                   <strong>{padNumber(expertise.length)}</strong>
                   <span>DISCIPLINES</span>
                 </div>
-                <p>Architecture, construction, and visual experiences.</p>
+                <p>Architecture, construction, technical documentation, and interior experiences.</p>
               </div>
             </div>
 
@@ -378,7 +398,7 @@ export default function Home() {
               <div className="about-section__bio">
                 <p className="eyebrow">THE PRACTICE</p>
                 <p className="about-section__lead">
-                  Eibad Hassan Shah is a BIM Architectural Engineer with 6+
+                  Eibad Hassan Shah is a BIM Architectural Engineer with 7+
                   years of experience across Saudi Arabia and Pakistan.
                 </p>
                 <p>
@@ -425,7 +445,7 @@ export default function Home() {
 
             <div className="about-section__stats">
               <div>
-                <strong>06+</strong>
+                <strong>07+</strong>
                 <span>YEARS EXPERIENCE</span>
               </div>
               <div>
@@ -591,14 +611,19 @@ export default function Home() {
                   <span>to construction sites.</span>
                 </h3>
               </div>
-              <div className="career-path__steps">
+              <ol className="career-path__steps">
                 {careerPath.map((step, index) => (
-                  <div className="career-path__step" key={step}>
-                    <span>0{index + 1}</span>
-                    <strong>{step}</strong>
-                  </div>
+                  <li className="career-path__step" key={step.stage}>
+                    <span className="career-path__num">
+                      0{index + 1}
+                    </span>
+                    <strong className="career-path__stage">
+                      {step.stage}
+                    </strong>
+                    <p className="career-path__detail">{step.detail}</p>
+                  </li>
                 ))}
-              </div>
+              </ol>
             </div>
 
             <div className="experience-cta">

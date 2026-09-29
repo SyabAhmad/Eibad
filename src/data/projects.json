@@ -56,14 +56,29 @@
       ],
       "creditRule": "Set credit when a visual is NOT Eibad's own work. The Stylus ASD / Savills interior visuals and the KSIA elevation sheets for the Riyadh Air Training Centre are the designer's, so they must be credited rather than presented as his visualization.",
       "placeholderNote": "Projects with no image yet can set image/heroImage to null; the card should then fall back to a coloured block using the project number rather than rendering a broken image."
+    },
+    "drawingsConvention": {
+      "note": "Every project has a drawings[] array rendered as a bottom carousel with a click-to-open popup modal. It currently holds the 3 shared placeholders in /public/drawings/.",
+      "replacingWithRealPlans": [
+        "Export each issued plan as JPEG or PNG at up to 3840px on the long edge (4K), quality 85+. Do not serve raw multi-MB TIFFs; next/image cannot optimise those.",
+        "Save them per project, e.g. /public/projects/nupco-al-jouf/drawings/01-ground-floor-plan.jpg, and update that project's drawings[] src/alt/label/title/caption.",
+        "Set placeholder: false on every real drawing. Any entry with placeholder: true renders a PLACEHOLDER badge in the carousel and modal.",
+        "Keep width/height accurate - the modal uses them for the intrinsic aspect ratio.",
+        "Kind is drawing for issued plans/sections/details, model for 3D model captures, photo for site markup photos."
+      ],
+      "placeholderFiles": [
+        "/drawings/placeholder-01.jpg",
+        "/drawings/placeholder-02.jpg",
+        "/drawings/placeholder-03.jpg"
+      ]
     }
   },
   "projects": [
     {
       "number": "01",
       "slug": "riyadh-air-training-centre",
-      "title": "Riyadh Air Training Centre",
-      "shortTitle": "Riyadh Air Training Centre",
+      "title": "Riyadh Air Academy",
+      "shortTitle": "Riyadh Air Academy",
       "subtitle": "Aircraft cabin crew training centre and simulators building, GACA Complex",
       "client": "Riyadh Air",
       "consultant": "Savills / Stylus",
@@ -73,9 +88,9 @@
       "area": "11,560 m²",
       "category": "Training Centre",
       "status": "On Going",
-      "year": "2024 — Present",
+      "year": "2025 — Present",
       "yearSource": "documented",
-      "role": "BIM Architectural Engineer",
+      "role": "Arch Eng",
       "scope": [
         "Architecture",
         "Construction",
@@ -220,6 +235,41 @@
           "credit": null
         }
       ],
+      "drawings": [
+        {
+          "src": "/drawings/placeholder-01.jpg",
+          "alt": "Placeholder drawing sheet 01 (general arrangement) for Riyadh Air Training Centre - issued plans will appear here",
+          "label": "Drawing / 01",
+          "title": "General Arrangement",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-02.jpg",
+          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Riyadh Air Training Centre - issued plans will appear here",
+          "label": "Drawing / 02",
+          "title": "Sections & Elevations",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-03.jpg",
+          "alt": "Placeholder drawing sheet 03 (details and schedules) for Riyadh Air Training Centre - issued plans will appear here",
+          "label": "Drawing / 03",
+          "title": "Details & Schedules",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        }
+      ],
       "sources": [
         "YMCO Company Profile (1).pdf, p. 42",
         "RX Training Center (Interior Visuals) 20241217.pdf, pp. 1-2 (programme), pp. 4-15 (room visuals)",
@@ -241,12 +291,12 @@
       "status": "Completed",
       "year": "2024 — 2025",
       "yearSource": "documented",
-      "role": "Architectural Engineer / BIM Coordination",
+      "role": "BIM Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
         "Project coordination",
-        "3D visualization"
+        "BIM Technical Documentation"
       ],
       "summary": "A 12 m high steel structure transport hub organised around maintenance bays, repair workshops and full driver welfare provision, delivered as a coordinated piece of regional infrastructure.",
       "description": "A 12 m high steel structure building consisting of a maintenance area and repair shops for light goods vehicles and heavy goods vehicle buses, separated based on functional and operational requirements. The building also houses driver support and welfare areas, including washrooms, changing rooms, a shared canteen, lockers and a prayer room for all staff and drivers.",
@@ -310,6 +360,41 @@
           "credit": null
         }
       ],
+      "drawings": [
+        {
+          "src": "/drawings/placeholder-01.jpg",
+          "alt": "Placeholder drawing sheet 01 (general arrangement) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
+          "label": "Drawing / 01",
+          "title": "General Arrangement",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-02.jpg",
+          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
+          "label": "Drawing / 02",
+          "title": "Sections & Elevations",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-03.jpg",
+          "alt": "Placeholder drawing sheet 03 (details and schedules) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
+          "label": "Drawing / 03",
+          "title": "Details & Schedules",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        }
+      ],
       "sources": [
         "YMCO Company Profile (1).pdf, p. 37"
       ]
@@ -329,12 +414,12 @@
       "status": "Completed",
       "year": "2024 — 2025",
       "yearSource": "inferred",
-      "role": "Architectural Engineer / BIM Coordination",
+      "role": "BIM Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
         "Project coordination",
-        "3D visualization"
+        "BIM Technical Documentation"
       ],
       "summary": "A 20 m high pharmaceutical logistics centre built around temperature-controlled storage at a range of set points, with annexure buildings and provision for future expansion of NUPCO's supply needs.",
       "description": "A 20 m high warehouse for the storage and distribution of medical supplies and equipment, including annexure buildings and infrastructure works on site. The warehouse includes temperature-controlled storage areas with a variety of temperature ranges, along with provision for future expansion to accommodate NUPCO's future needs.",
@@ -518,6 +603,41 @@
           "credit": null
         }
       ],
+      "drawings": [
+        {
+          "src": "/drawings/placeholder-01.jpg",
+          "alt": "Placeholder drawing sheet 01 (general arrangement) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
+          "label": "Drawing / 01",
+          "title": "General Arrangement",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-02.jpg",
+          "alt": "Placeholder drawing sheet 02 (sections and elevations) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
+          "label": "Drawing / 02",
+          "title": "Sections & Elevations",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-03.jpg",
+          "alt": "Placeholder drawing sheet 03 (details and schedules) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
+          "label": "Drawing / 03",
+          "title": "Details & Schedules",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        }
+      ],
       "sources": [
         "YMCO Company Profile (1).pdf, p. 40"
       ]
@@ -537,12 +657,12 @@
       "status": "Completed",
       "year": "2025 — 2026",
       "yearSource": "inferred",
-      "role": "Architectural Engineer / BIM Coordination",
+      "role": "BIM Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
         "Project coordination",
-        "3D visualization"
+        "BIM Technical Documentation"
       ],
       "summary": "A 14 m high steel structure logistics warehouse built as a single point of supply for the Red Sea corridor, combining bulk storage with a mezzanine office and a fitted racking system.",
       "description": "A 14 m high steel structure logistics warehouse building for a 'one-stop-shop' service, covering bulk storage and delivery needs for a wide range of generic and brand-specific products including food, OS&E and consumables.",
@@ -594,6 +714,41 @@
           "credit": null
         }
       ],
+      "drawings": [
+        {
+          "src": "/drawings/placeholder-01.jpg",
+          "alt": "Placeholder drawing sheet 01 (general arrangement) for Red Sea Central Distribution Center - issued plans will appear here",
+          "label": "Drawing / 01",
+          "title": "General Arrangement",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-02.jpg",
+          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Red Sea Central Distribution Center - issued plans will appear here",
+          "label": "Drawing / 02",
+          "title": "Sections & Elevations",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-03.jpg",
+          "alt": "Placeholder drawing sheet 03 (details and schedules) for Red Sea Central Distribution Center - issued plans will appear here",
+          "label": "Drawing / 03",
+          "title": "Details & Schedules",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        }
+      ],
       "sources": [
         "YMCO Company Profile (1).pdf, p. 38"
       ]
@@ -613,12 +768,12 @@
       "status": "On Going",
       "year": "2025 — Present",
       "yearSource": "inferred",
-      "role": "Architectural Engineer / BIM Coordination",
+      "role": "BIM Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
         "Project coordination",
-        "3D visualization"
+        "BIM Technical Documentation"
       ],
       "summary": "A 15 m high steel processing facility across four floors including administration, paired with a separate 13 m high cold store and auxiliary buildings on a 40,000 m² site.",
       "description": "A 15 m high processing facility steel building with 4 floors including Admin, and a separate cold store building 13 m high, plus auxiliary buildings.",
@@ -668,6 +823,41 @@
           "format": "png",
           "kind": "photo",
           "credit": null
+        }
+      ],
+      "drawings": [
+        {
+          "src": "/drawings/placeholder-01.jpg",
+          "alt": "Placeholder drawing sheet 01 (general arrangement) for French Fries Processing Facility - issued plans will appear here",
+          "label": "Drawing / 01",
+          "title": "General Arrangement",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-02.jpg",
+          "alt": "Placeholder drawing sheet 02 (sections and elevations) for French Fries Processing Facility - issued plans will appear here",
+          "label": "Drawing / 02",
+          "title": "Sections & Elevations",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
+        },
+        {
+          "src": "/drawings/placeholder-03.jpg",
+          "alt": "Placeholder drawing sheet 03 (details and schedules) for French Fries Processing Facility - issued plans will appear here",
+          "label": "Drawing / 03",
+          "title": "Details & Schedules",
+          "caption": "Issued plans will appear here.",
+          "kind": "drawing",
+          "placeholder": true,
+          "width": 1684,
+          "height": 1190
         }
       ],
       "sources": [
