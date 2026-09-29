@@ -103,17 +103,16 @@ export const services = [
 /**
  * Off-site profiles that should be linked back to this site.
  *
- * TODO - fill these in. This is the highest-leverage SEO task on the site:
- * an empty sameAs array means Google has no verified link between this domain
- * and your professional identity, which weakens every entity-based search.
+ * This is the highest-leverage SEO task on the site: an empty sameAs array
+ * means Google has no verified link between this domain and your professional
+ * identity, which weakens every entity-based search and every AI answer that
+ * cites you.
  *
- * LinkedIn is the most important one. Ask for it first.
+ * For sameAs to do its job the link has to exist in BOTH directions. Adding the
+ * URL here is only half of it — your LinkedIn profile's Website field and a
+ * Featured link back to the site are the other half.
  */
-export const sameAs: string[] = [
-  // "https://www.linkedin.com/in/your-handle",
-  // "https://www.instagram.com/your-handle",
-  // "https://x.com/your-handle",
-];
+export const sameAs: string[] = ["https://www.linkedin.com/in/eibad"];
 
 /**
  * Google Business Profile data. Name / Address / Phone must match what you

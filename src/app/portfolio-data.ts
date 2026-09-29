@@ -255,7 +255,7 @@ export const expertise = [
       "Visualization",
     ],
     ...disciplineImage(
-      "/projects/red-sea-transportation-hub-qc-lab/04-reception.jpg",
+      "/projects/red-sea-transportation-hub-qc-lab/10-reception.jpg",
     ),
   },
 ];
