@@ -11,6 +11,7 @@ import {
   siteName,
 } from "@/app/seo";
 import DrawingsCarousel from "./drawings-carousel";
+import RendersCarousel from "./renders-carousel";
 
 const caseMeta = (project: Project) => [
   { label: "YEAR", value: project.year },
@@ -184,6 +185,14 @@ export default async function ProjectPage({
             <span>FEATURED IMAGE / {project.number}</span>
           </div>
         </section>
+
+        {project.renders && project.renders.length > 0 && (
+          <RendersCarousel
+            renders={project.renders}
+            projectNumber={project.number}
+            projectTitle={project.shortTitle}
+          />
+        )}
 
         <section className="case-overview">
           <p className="eyebrow">PROJECT OVERVIEW</p>

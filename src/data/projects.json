@@ -71,6 +71,11 @@
         "/drawings/placeholder-02.jpg",
         "/drawings/placeholder-03.jpg"
       ]
+    },
+    "rendersConvention": {
+      "note": "projects[].renders[] is rendered as an auto-advancing carousel at the top of the case study, above PROJECT OVERVIEW. Renders are deliberately kept out of images[] so they are not repeated in the site-photography gallery.",
+      "folderPattern": "/projects/<project-slug>/renders/<nn>-<name>.jpg",
+      "creditRule": "Set credit when the render is NOT Eibad's own work. The Riyadh Air Academy exterior renders were issued by the project consultants (Savills / Stylus) and must be credited if presented as design imagery."
     }
   },
   "projects": [
@@ -96,6 +101,28 @@
         "Construction",
         "Project coordination",
         "3D visualization"
+      ],
+      "renders": [
+        {
+          "src": "/projects/riyadh-air-training-centre/renders/01-approach.jpg",
+          "alt": "Exterior render of the Riyadh Air Academy approach elevation, with the academy sign on the stone clad volume, a landscaped forecourt and a glazed ground floor base.",
+          "label": "Render / 01",
+          "title": "Design Render",
+          "caption": "Design render — approach elevation and landscaped forecourt.",
+          "credit": null,
+          "width": 952,
+          "height": 553
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/renders/02-west-elevation.jpg",
+          "alt": "Exterior render of the west elevation at golden hour, showing the stepped stone volumes, the recessed glazed entrance bay and the vertical window slot.",
+          "label": "Render / 02",
+          "title": "Design Render",
+          "caption": "Design render — west elevation in low evening light.",
+          "credit": null,
+          "width": 991,
+          "height": 572
+        }
       ],
       "summary": "A 21 m high cabin crew training and simulators facility rising inside the GACA Complex, pairing a steel simulator hall with a three-level concrete building of classrooms, offices and administration space.",
       "description": "A 21 metre high aircraft cabin crew training centre facility and simulators building located in the Airport Road GACA Complex. Made of a steel structure simulator building and a 3-level concrete building for the admin, offices, classrooms and facility areas.",

@@ -13,6 +13,18 @@ export type ProjectImage = {
   height: number;
 };
 
+export type ProjectRender = {
+  src: string;
+  alt: string;
+  label: string;
+  title: string;
+  caption: string;
+  /** Set when the render is not Eibad's own work, e.g. consultant-issued imagery. */
+  credit: string | null;
+  width: number;
+  height: number;
+};
+
 export type ProjectDrawing = {
   src: string;
   alt: string;
@@ -49,6 +61,8 @@ export type Project = {
   highlights: string[];
   spaces?: string[];
   materials?: string[];
+  /** Auto-advancing design-render carousel at the top of the case study. */
+  renders?: ProjectRender[];
   /** Card thumbnail. Landscape, cropped to aspect-ratio 1.55 / 1.42 / 1.28. */
   image: string;
   alt: string;
