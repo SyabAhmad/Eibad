@@ -151,7 +151,7 @@ export default function Home() {
 
           <a
             className="nav-cv"
-            href="/Eibad_Hassan_Shah_CV-1.pdf"
+            href="/Eibad_Hassan_Shah_CV.pdf"
             download
           >
             CV <span aria-hidden="true">↗</span>
@@ -183,7 +183,7 @@ export default function Home() {
               </Link>
             ))}
             <a
-              href="/Eibad_Hassan_Shah_CV-1.pdf"
+              href="/Eibad_Hassan_Shah_CV.pdf"
               download
               onClick={closeMenu}
             >
@@ -630,7 +630,7 @@ export default function Home() {
               <p>Want the complete professional profile?</p>
               <a
                 className="text-link"
-                href="/Eibad_Hassan_Shah_CV-1.pdf"
+                href="/Eibad_Hassan_Shah_CV.pdf"
                 download
               >
                 DOWNLOAD CV <span aria-hidden="true">↗</span>
@@ -841,7 +841,7 @@ export default function Home() {
               </div>
               <a
                 className="text-link"
-                href="/Eibad_Hassan_Shah_CV-1.pdf"
+                href="/Eibad_Hassan_Shah_CV.pdf"
                 download
               >
                 DOWNLOAD CV <span aria-hidden="true">↓</span>

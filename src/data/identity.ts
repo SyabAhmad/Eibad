@@ -25,14 +25,14 @@ export const employers = [
     location: "Riyadh, Saudi Arabia",
   },
   {
-    name: "Moderino Design & Build",
-    title: "Project Architect",
+    name: "Al Fouzan Trading & General Construction",
+    title: "Architectural Engineer",
     from: "2022",
     to: "2023",
-    location: "Rawalpindi, Pakistan",
+    location: "Al Jouf, Saudi Arabia",
   },
   {
-    name: "Paradigm Builders & Developers",
+    name: "Moderino Design & Build",
     title: "Senior Architect",
     from: "2021",
     to: "2022",

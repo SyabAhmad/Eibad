@@ -102,10 +102,12 @@ export const experience: ExperienceRole[] = [
     company: "Castle Shepherd Gilmour",
     location: "Bahria Town-7, Rawalpindi, Pakistan",
     responsibilities: [
-      "Architectural concepts and design proposals",
-      "Technical and MEP drawing packages",
-      "3D modeling and design presentations",
-      "Site visits and architectural supervision",
+      "Developed architectural concepts and design proposals for commercial, high-rise residential, and residential projects",
+      "Produced sketches and 3D models using SketchUp to develop and communicate design concepts",
+      "Prepared complete architectural, working, and MEP drawings in accordance with applicable codes and regulatory requirements",
+      "Met with clients to understand project requirements and translated them into documented design solutions",
+      "Delivered design presentations and supported client discussions throughout the design process",
+      "Conducted site visits and provided architectural supervision on assigned projects",
     ],
     projects: [
       "Commercial projects",
@@ -114,43 +116,42 @@ export const experience: ExperienceRole[] = [
     ],
   },
   {
-    id: "paradigm-builders",
+    id: "moderino-design-build",
     startYear: "2021",
     endYear: "2022",
     period: "SEP 2021 — MAY 2022",
     title: "SENIOR ARCHITECT",
-    company: "Paradigm Builders & Developers",
-    location: "Rawalpindi, Pakistan",
-    responsibilities: [
-      "Architectural design development and 3D modeling",
-      "Complete architectural and working drawing packages",
-      "Client requirement gathering and design translation",
-      "Project graphics, presentation materials, and renders",
-    ],
-    projects: [
-      "Commercial and office projects",
-      "Mid-rise and high-rise developments",
-      "Urban planning projects",
-    ],
-  },
-  {
-    id: "moderino-design-build",
-    startYear: "2022",
-    endYear: "2023",
-    period: "MAY 2022 — SEP 2023",
-    title: "PROJECT ARCHITECT",
     company: "Moderino Design & Build",
     location: "Bahria Town-8, Rawalpindi, Pakistan",
     responsibilities: [
-      "Architectural design and documentation management",
-      "Interior elevations, axonometric views, and schedules",
-      "Regulatory review and design quality control",
-      "Client, vendor, and project team coordination",
+      "Led architectural design development for apartment, office, retail, healthcare, and interior-focused projects",
+      "Managed teams responsible for complete architectural, working, and MEP drawing packages",
+      "Reviewed project drawings for compliance with relevant regulatory authorities, codes, and standards",
+      "Presented design proposals to clients and translated project requirements into practical design solutions",
+      "Coordinated with clients, vendors, and project teams throughout the design and documentation process",
+      "Contributed to completed projects including a 4-kanal residential block in Gulberg Greens, Islamabad and The EVA commercial project on Morgah Road, Rawalpindi",
     ],
     projects: [
       "4-kanal residential block, Gulberg Greens, Islamabad",
       "The EVA commercial project, Morgah Road, Rawalpindi",
     ],
+  },
+  {
+    id: "al-fouzan-trading-general-construction",
+    startYear: "2022",
+    endYear: "2023",
+    period: "AUG 2022 — SEP 2023",
+    title: "ARCHITECTURAL ENGINEER",
+    company: "Al Fouzan Trading & General Construction",
+    location: "Al Jouf, Saudi Arabia",
+    responsibilities: [
+      "Developed architectural shop drawings and detailed technical documentation using AutoCAD for construction and project delivery",
+      "Coordinated with consultants, subcontractors, and engineers to maintain drawing quality, resolve technical issues, and support project schedules",
+      "Identified design discrepancies, clashes, and missing information and initiated RFIs and technical queries as required",
+      "Completed and handed over technical drawings",
+      "Contributed to the Al Jouf Airport Development Project at Sakaka",
+    ],
+    projects: ["Al Jouf Airport Development Project at Sakaka"],
   },
   {
     id: "youssef-marroun-contracting",
@@ -161,18 +162,23 @@ export const experience: ExperienceRole[] = [
     company: "Youssef Marroun Contracting Co.",
     location: "Riyadh, Saudi Arabia",
     responsibilities: [
-      "Architectural shop drawings and technical documentation",
-      "Architectural and MEP BIM coordination",
-      "Saudi Building Code and site compliance review",
-      "Site coordination, quality control, and project handovers",
-      "Client, consultant, and subcontractor coordination",
+      "Develop architectural shop drawings and detailed technical documentation using Autodesk Revit for construction and project delivery",
+      "Coordinate architectural designs with MEP services through BIM, identifying and resolving clashes before they affect site execution",
+      "Coordinate with consultants, subcontractors, and project teams to maintain drawing quality, resolve technical issues, and support project schedules",
+      "Ensure architectural drawings and site execution comply with applicable Saudi regulations and project requirements, including the Saudi Building Code",
+      "Conduct regular site visits to review architectural works, coordinate technical requirements, and support quality compliance",
+      "Identify design discrepancies, clashes, and missing information and initiate RFIs and technical queries as required",
+      "Contribute to securing required project approvals and permits from relevant Saudi authorities and local municipalities",
+      "Propose practical material alternatives and value-engineering solutions while maintaining required quality and design intent",
+      "Complete and hand over technical drawings within or ahead of project deadlines, supporting timely project delivery",
+      "Support project handovers with minimal defects and snagging during final client inspections",
     ],
     projects: [
-      "Riyadh Air Training Centre (GACA)",
-      "Red Sea Central Transportation Hub & QC Lab",
-      "Red Sea Central Distribution Center (CDC)",
+      "Riyadh Air Academy (GACA)",
+      "Red Sea projects — CTH, CDC and QC-LAB",
       "NUPCO Distribution Centre — Al Jouf",
-      "French Fries Processing Facility — Sudair",
+      "Mawten Block 02 and 30",
+      "Farm Frites Warehouses",
     ],
     current: true,
   },
@@ -261,15 +267,18 @@ export const expertise = [
 ];
 
 export const tools = [
-  "AUTODESK REVIT",
-  "NAVISWORKS",
-  "AUTOCAD",
-  "SKETCHUP",
-  "V-RAY",
-  "LUMION",
-  "ENSCAPE",
-  "ADOBE PHOTOSHOP",
-];
+    "AUTODESK REVIT",
+    "NAVISWORKS",
+    "AUTODESK CONSTRUCTION CLOUD",
+    "AUTOCAD",
+    "SKETCHUP",
+    "V-RAY",
+    "LUMION",
+    "ENSCAPE",
+    "ADOBE PHOTOSHOP",
+    "MICROSOFT OFFICE",
+  ];
+
 
 export const education = {
   degree: "BACHELOR OF ARCHITECTURE (B.ARCH.)",
@@ -293,19 +302,25 @@ export const registrations = [
 ];
 
 export const workshops = [
-  {
-    year: "2016",
-    title: "High Performance Buildings & Integrated Design Process",
-  },
-  {
-    year: "2016",
-    title: "Building Materials: Its Applications in Architecture",
-  },
-  {
-    year: "2015",
-    title: "Modes of Interpretation: Analyze, Translate and Transform",
-  },
-];
+    {
+      year: "2016",
+      title: "High Performance Buildings & Integrated Design Process",
+    },
+    {
+      year: "2016",
+      title: "Building Materials: Its Applications in Architecture",
+    },
+    {
+      year: "2016",
+      title:
+        "Design Discovery Pakistan: Faculty Pavilion for Future Leisure Spaces",
+    },
+    {
+      year: "2015",
+      title: "Modes of Interpretation: Analyze, Translate and Transform",
+    },
+  ];
+
 
 export const professionalFocus = [
   "ARCHITECTURE",
