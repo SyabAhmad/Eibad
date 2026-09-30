@@ -676,6 +676,60 @@ button {
   gap: clamp(6rem, 14vw, 13rem);
 }
 
+.project-card {
+  position: relative;
+  min-width: 0;
+}
+
+.project-card__frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+
+.project-card__frame.is-active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.project-card__frame img {
+  object-fit: cover;
+}
+
+.project-card__badge {
+  position: absolute;
+  z-index: 3;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(241, 239, 234, 0.5);
+  background: rgba(17, 17, 17, 0.6);
+  color: var(--paper);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+}
+
+.project-card__dots {
+  position: absolute;
+  z-index: 3;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.project-card__dots span {
+  width: 1.75rem;
+  height: 2px;
+  background: rgb(241 239 234 / 35%);
+  transition: background-color 400ms ease;
+}
+
+.project-card__dots span.is-active {
+  background: var(--paper);
+}
+
 .project-spread {
   display: grid;
   grid-template-columns: 3.5rem minmax(0, 1fr);

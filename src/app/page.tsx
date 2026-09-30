@@ -18,6 +18,7 @@ import {
   tools,
   workshops,
 } from "@/app/portfolio-data";
+import ProjectCardCarousel from "@/app/project-card-carousel";
 
 const navItems = [
   { label: "Work", href: "#work" },
@@ -311,25 +312,10 @@ export default function Home() {
                 >
                   <div className="project-spread__number">{project.number}</div>
 
-                  <Link
-                    className="project-spread__visual"
-                    href={`/work/${project.slug}`}
-                    aria-label={`View the ${project.title} case study`}
-                  >
-                    <Image
-                      src={project.image}
-                      alt={project.alt}
-                      fill
-                      sizes="(max-width: 900px) calc(100vw - 2.5rem), 78vw"
-                    />
-                    <span className="project-spread__image-label">
-                      PROJECT / {project.number}
-                    </span>
-                    <span className="project-spread__view">
-                      VIEW
-                      <span aria-hidden="true">↗</span>
-                    </span>
-                  </Link>
+                  <ProjectCardCarousel
+                    project={project}
+                    sizes="(max-width: 900px) calc(100vw - 2.5rem), 78vw"
+                  />
 
                   <div className="project-spread__info">
                     <div>
