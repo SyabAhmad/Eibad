@@ -1578,6 +1578,9 @@ button {
 }
 
 .case-renders__viewer {
+  /* Overrides .case-viewer's two-column split grid. Renders are a full-width
+     carousel with the caption underneath, not a side-by-side layout. */
+  display: block;
   border: 1px solid var(--line);
 }
 
