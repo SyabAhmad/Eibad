@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { defaultDescription, JsonLd, personSchema, siteName, siteUrl } from "@/app/seo";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-M1B51CLC1K";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -81,6 +84,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full">
         <JsonLd data={personSchema()} />
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+        </Script>
       </body>
     </html>
   );

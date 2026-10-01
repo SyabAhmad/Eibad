@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import {
   areasServed,
+  contactDetails,
   credentials,
   education,
   employers,
@@ -36,6 +37,18 @@ export function personSchema() {
     description: defaultDescription,
     knowsAbout: [...services],
     areaServed: [...areasServed],
+    email: contactDetails.email,
+    telephone: contactDetails.phone,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "Professional enquiries",
+        email: contactDetails.email,
+        telephone: contactDetails.phone,
+        areaServed: "SA",
+        availableLanguage: ["English", "Urdu", "Pashto"],
+      },
+    ],
     worksFor: employers.slice(0, 1).map((employer) => ({
       "@type": "Organization",
       name: employer.name,

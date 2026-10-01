@@ -95,7 +95,7 @@
       "status": "On Going",
       "year": "2025 — Present",
       "yearSource": "documented",
-      "role": "BIM Architectural Engineer",
+      "role": "Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
@@ -941,7 +941,7 @@
       "status": "On Going",
       "year": "2025 — Present",
       "yearSource": "inferred",
-      "role": "BIM Architectural Engineer",
+      "role": "Architectural Engineer",
       "scope": [
         "Architecture",
         "Construction",
@@ -957,10 +957,10 @@
         "Full steel erection, formwork and slab reinforcement sequence on site",
         "Issued architectural and coordination drawing sheets"
       ],
-      "image": "/projects/french-fries-processing-facility/01-steel-frame.jpg",
+      "image": "/projects/french-fries-processing-facility/07-hall-interior.jpg",
       "heroImage": "/projects/french-fries-processing-facility/07-hall-interior.jpg",
       "heroImageAlt": "The completed main processing hall interior with the portal frames receding along the full 15 m span and the finished slab underfoot.",
-      "alt": "The 15 m steel frame erected on site with the first cladding panels fixed to the gable and side elevations.",
+      "alt": "The completed main processing hall interior with the portal frames receding along the full 15 m span and the finished slab underfoot.",
       "images": [
         {
           "src": "/projects/french-fries-processing-facility/01-steel-frame.jpg",

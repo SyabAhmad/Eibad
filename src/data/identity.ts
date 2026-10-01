@@ -90,7 +90,6 @@ export const areasServed = [
 ] as const;
 
 export const services = [
-  "Architectural design",
   "Architectural engineering",
   "BIM coordination",
   "Architectural shop drawings",
@@ -99,6 +98,15 @@ export const services = [
   "3D architectural visualization",
   "Saudi Building Code compliance",
 ] as const;
+
+/** Public contact details. Keep in sync with the CV and the contact section. */
+export const contactDetails = {
+  email: "ar.eibadshah@gmail.com",
+  phone: "+966550547843",
+  phoneDisplay: "+966 55 054 7843",
+  whatsapp: "https://wa.me/966550547843",
+  location: "Riyadh, Saudi Arabia",
+} as const;
 
 /**
  * Off-site profiles that should be linked back to this site.

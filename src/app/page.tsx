@@ -384,7 +384,7 @@ export default function Home() {
               <div className="about-section__bio">
                 <p className="eyebrow">THE PRACTICE</p>
                 <p className="about-section__lead">
-                  Eibad Hassan Shah is a BIM Architectural Engineer with 7+
+                  Eibad Hassan Shah is a BIM Architectural Engineer with 7
                   years of experience across Saudi Arabia and Pakistan.
                 </p>
                 <p>
@@ -528,7 +528,7 @@ export default function Home() {
                   <article
                     className={`experience-entry ${
                       isExpanded ? "experience-entry--expanded" : ""
-                    }`}
+                      }`}
                     key={role.id}
                   >
                     <div className="experience-entry__year" aria-hidden="true">
@@ -649,7 +649,7 @@ export default function Home() {
                   <article
                     className={`expertise-card ${
                       isActive ? "expertise-card--active" : ""
-                    }`}
+                      }`}
                     key={item.id}
                     onMouseEnter={() => setActiveExpertise(item.id)}
                     onMouseLeave={() => setActiveExpertise(null)}
@@ -882,7 +882,21 @@ export default function Home() {
                 <p className="eyebrow">GET IN TOUCH</p>
                 <div>
                   <span>DIRECT</span>
-                  <p>WhatsApp conversation</p>
+                  <p>
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                  </p>
+                </div>
+                <div>
+                  <span>PHONE</span>
+                  <p>
+                    <a href={`tel:+${contact.whatsappNumber}`}>
+                      {contact.phoneDisplay}
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <span>WHATSAPP</span>
+                  <p>Direct conversation</p>
                 </div>
                 <div>
                   <span>LOCATION</span>
@@ -928,7 +942,10 @@ export default function Home() {
               <span>EIBAD HASSAN SHAH</span>
               <span>ARCHITECTURAL ENGINEER</span>
             </div>
-            <span>© 2026 EIBAD HASSAN SHAH</span>
+            <div className="contact-footer__centre">
+              <a href={`mailto:${contact.email}`}>{contact.email}</a>
+              <span>© 2026 EIBAD HASSAN SHAH</span>
+            </div>
             <div>
               <span>RIYADH / SAUDI ARABIA</span>
               <Link href="/insights">INSIGHTS ↗</Link>

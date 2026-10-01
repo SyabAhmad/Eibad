@@ -4228,7 +4228,50 @@ button {
     font-size: clamp(2.35rem, 12vw, 4.4rem);
   }
 
-  .expertise-equation {
+.contact-footer__centre {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+}
+
+.contact-footer a {
+  transition: color 250ms ease;
+}
+
+.contact-footer a:hover {
+  color: var(--paper);
+}
+
+.contact-details a {
+  color: var(--paper);
+  text-decoration: underline;
+  text-decoration-color: rgb(183 154 128 / 55%);
+  text-underline-offset: 0.25rem;
+  transition: text-decoration-color 250ms ease;
+}
+
+.contact-details a:hover {
+  text-decoration-color: var(--sand);
+}
+
+.contact-details a:focus-visible {
+  outline: 2px solid var(--sand);
+  outline-offset: 3px;
+}
+
+.contact-footer__centre a {
+  text-decoration: underline;
+  text-decoration-color: rgb(183 154 128 / 55%);
+  text-underline-offset: 0.25rem;
+}
+
+.contact-footer a:focus-visible {
+  outline: 2px solid var(--sand);
+  outline-offset: 3px;
+}
+
+.expertise-equation {
+
     align-items: flex-start;
     flex-direction: column;
   }

@@ -346,5 +346,7 @@ export const professionalFocus = [
 
 export const contact = {
   whatsappNumber: "966550547843",
+  email: "ar.eibadshah@gmail.com",
+  phoneDisplay: "+966 55 054 7843",
   location: "Riyadh, Saudi Arabia",
 };
