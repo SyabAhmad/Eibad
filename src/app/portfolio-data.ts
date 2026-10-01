@@ -133,7 +133,7 @@ export const experience: ExperienceRole[] = [
     id: "moderino-design-build",
     startYear: "2021",
     endYear: "2022",
-    period: "SEP 2021 — MAY 2022",
+    period: "SEP 2021 — AUG 2022",
     title: "SENIOR ARCHITECT",
     company: "Moderino Design & Build",
     location: "Bahria Town-8, Rawalpindi, Pakistan",
@@ -151,12 +151,12 @@ export const experience: ExperienceRole[] = [
     ],
   },
   {
-    id: "al-fouzan-trading-general-construction",
+    id: "al-fouzan-trading-general-contracting",
     startYear: "2022",
     endYear: "2023",
-    period: "AUG 2022 — SEP 2023",
+    period: "OCT 2022 — SEP 2023",
     title: "ARCHITECTURAL ENGINEER",
-    company: "Al Fouzan Trading & General Construction",
+    company: "Al Fouzan Trading & General Contracting Co.",
     location: "Al Jouf, Saudi Arabia",
     responsibilities: [
       "Developed architectural shop drawings and detailed technical documentation using AutoCAD for construction and project delivery",
@@ -244,7 +244,7 @@ export const expertise = [
       "Execution support",
     ],
     ...disciplineImage(
-      "/projects/french-fries-processing-facility/03-erection.jpg",
+      "/projects/french-fries-processing-facility/02-formwork-scaffold.jpg",
     ),
   },
   {

@@ -25,7 +25,7 @@ export const employers = [
     location: "Riyadh, Saudi Arabia",
   },
   {
-    name: "Al Fouzan Trading & General Construction",
+    name: "Al Fouzan Trading & General Contracting Co.",
     title: "Architectural Engineer",
     from: "2022",
     to: "2023",
