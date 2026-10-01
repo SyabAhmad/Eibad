@@ -143,10 +143,11 @@
         "Riyadh stone and dark metal — classroom buildings"
       ],
       "highlights": [
-        "21 m high cabin crew training centre and simulators building, 11,560 m²",
-        "Steel structure simulator hall plus a 3-level concrete classroom and office building",
+        "21 m high steel structure simulator building, 11,560 m²",
+        "Three-level concrete building for administration, offices and classrooms",
         "Interior programme of reception, cafeteria, classrooms, majlis, offices, instructor's room, briefing room and corridor",
-        "Final revised elevations aligned with KSIA guidelines — Riyadh stone, coregated coated metal and bronze accents"
+        "Final revised elevations aligned with King Salman International Airport guidelines",
+        "Issued architectural and interior drawing sheets with roof envelope and joinery details"
       ],
       "image": "/projects/riyadh-air-training-centre/01-exterior-facade.jpg",
       "heroImage": "/projects/riyadh-air-training-centre/02-entrance-elevation.jpg",
@@ -336,37 +337,70 @@
       ],
       "drawings": [
         {
-          "src": "/drawings/placeholder-01.jpg",
-          "alt": "Placeholder drawing sheet 01 (general arrangement) for Riyadh Air Training Centre - issued plans will appear here",
-          "label": "Drawing / 01",
-          "title": "General Arrangement",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/riyadh-air-training-centre/drawings/01-ground-floor-plan.jpg",
+          "alt": "Ground floor architectural plan showing the office and classroom layout across the full structural grid.",
+          "label": "Drawing / SWD-40101",
+          "title": "Ground Floor Plan",
+          "caption": "Ground floor architectural plan showing the office and classroom layout across the full structural grid.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-02.jpg",
-          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Riyadh Air Training Centre - issued plans will appear here",
-          "label": "Drawing / 02",
+          "src": "/projects/riyadh-air-training-centre/drawings/02-sections-elevations.jpg",
+          "alt": "Section and elevation drawings keyed to the basement, ground, first and second floor levels.",
+          "label": "Drawing / SWD-40102",
           "title": "Sections & Elevations",
-          "caption": "Issued plans will appear here.",
+          "caption": "Section and elevation drawings keyed to the basement, ground, first and second floor levels.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-03.jpg",
-          "alt": "Placeholder drawing sheet 03 (details and schedules) for Riyadh Air Training Centre - issued plans will appear here",
-          "label": "Drawing / 03",
-          "title": "Details & Schedules",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/riyadh-air-training-centre/drawings/03-site-plan.jpg",
+          "alt": "Site plan showing the pedestrian pathway, media wall and RX logo, the double beam 5T crane and the electrical trench runs.",
+          "label": "Drawing / SWD-10300",
+          "title": "Site Plan",
+          "caption": "Site plan showing the pedestrian pathway, media wall and RX logo, the double beam 5T crane and the electrical trench runs.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/drawings/04-restroom-elevations.jpg",
+          "alt": "Restroom elevation drawings with the sanitaryware schedule, wall types and fitted equipment.",
+          "label": "Drawing / SWD-40203",
+          "title": "Restroom Elevations",
+          "caption": "Restroom elevation drawings with the sanitaryware schedule, wall types and fitted equipment.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/drawings/05-joinery-elevations.jpg",
+          "alt": "Joinery elevations with the reception counter, double black marble top and mirror with concealed LED profile.",
+          "label": "Drawing / SWD-40204",
+          "title": "Joinery Elevations",
+          "caption": "Joinery elevations with the reception counter, double black marble top and mirror with concealed LED profile.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/drawings/06-roof-envelope-details.jpg",
+          "alt": "Combined roof envelope details showing the TPO membrane, PIR insulation, bonding adhesive and parapet upstands.",
+          "label": "Drawing / SWD-40103",
+          "title": "Roof Envelope Details",
+          "caption": "Combined roof envelope details showing the TPO membrane, PIR insulation, bonding adhesive and parapet upstands.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         }
       ],
       "sources": [
@@ -404,8 +438,8 @@
         "Long blue and white clad elevation with a cantilevered tensile canopy",
         "Light goods and heavy goods bus repair workshops, zoned by function",
         "Full driver welfare suite — washrooms, changing rooms, shared canteen, lockers, prayer room",
-        "Numbered dock doors along the service loading elevation",
-        "Quality control laboratory within the same facility"
+        "Quality control laboratory within the same facility",
+        "Issued floor plans, sections, elevations and construction detail sheets"
       ],
       "image": "/projects/red-sea-transportation-hub-qc-lab/01-canopy-soffit.jpg",
       "heroImage": "/projects/red-sea-transportation-hub-qc-lab/02-exterior-plaza.jpg",
@@ -535,37 +569,92 @@
       ],
       "drawings": [
         {
-          "src": "/drawings/placeholder-01.jpg",
-          "alt": "Placeholder drawing sheet 01 (general arrangement) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
-          "label": "Drawing / 01",
-          "title": "General Arrangement",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/01-main-floor-plan.jpg",
+          "alt": "Main floor plan of the transportation hub building, showing the full grid and internal layout.",
+          "label": "Drawing / AR-10001",
+          "title": "Transportation Hub Main Floor Plan",
+          "caption": "Main floor plan of the transportation hub building, showing the full grid and internal layout.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
         },
         {
-          "src": "/drawings/placeholder-02.jpg",
-          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
-          "label": "Drawing / 02",
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/02-ground-floor-plan.jpg",
+          "alt": "Ground floor plan with the wall construction legend, covering reinforced concrete, hollow and solid block walls, EIFS insulation and insulated sandwich panel.",
+          "label": "Drawing / AR-11001",
+          "title": "Ground Floor Plan & Wall Legend",
+          "caption": "Ground floor plan with the wall construction legend, covering reinforced concrete, hollow and solid block walls, EIFS insulation and insulated sandwich panel.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/03-plant-floor-plan.jpg",
+          "alt": "Plant and support floor plan showing the generator room, fuel room, LV and MV rooms, corridor and compressor rooms.",
+          "label": "Drawing / AR-11002",
+          "title": "Plant & Support Floor Plan",
+          "caption": "Plant and support floor plan showing the generator room, fuel room, LV and MV rooms, corridor and compressor rooms.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/04-roof-plan-insulation.jpg",
+          "alt": "Roof plan of the QC lab building with the site access loop, roof drainage layout, and the typical wall and roof insulation details.",
+          "label": "Drawing / AR-10002",
+          "title": "Roof Plan & Insulation Details",
+          "caption": "Roof plan of the QC lab building with the site access loop, roof drainage layout, and the typical wall and roof insulation details.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/05-sections-elevations.jpg",
+          "alt": "Section and elevation drawings at ground and roof level, showing finished floor levels and the structural grid.",
+          "label": "Drawing / AR-30001",
           "title": "Sections & Elevations",
-          "caption": "Issued plans will appear here.",
+          "caption": "Section and elevation drawings at ground and roof level, showing finished floor levels and the structural grid.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
         },
         {
-          "src": "/drawings/placeholder-03.jpg",
-          "alt": "Placeholder drawing sheet 03 (details and schedules) for Red Sea Central Transportation Hub & QC Lab - issued plans will appear here",
-          "label": "Drawing / 03",
-          "title": "Details & Schedules",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/06-cross-sections.jpg",
+          "alt": "Four cross sections through the QC lab at C1, D1, E1 and F1, showing the internal partitions and column line.",
+          "label": "Drawing / AR-20001",
+          "title": "Cross Sections C1 - F1",
+          "caption": "Four cross sections through the QC lab at C1, D1, E1 and F1, showing the internal partitions and column line.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/07-wall-finish-details.jpg",
+          "alt": "Internal wall build-up details showing concrete slab, mortar bed, ceramic and porcelain tiling and cement plaster finish.",
+          "label": "Drawing / AR-58001",
+          "title": "Internal Wall Finish Details",
+          "caption": "Internal wall build-up details showing concrete slab, mortar bed, ceramic and porcelain tiling and cement plaster finish.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
+        },
+        {
+          "src": "/projects/red-sea-transportation-hub-qc-lab/drawings/08-electrical-trench-details.jpg",
+          "alt": "Electrical trench details with powder coated galvanised steel straps, stringers and flat sections.",
+          "label": "Drawing / AR-58002",
+          "title": "Electrical Trench Details",
+          "caption": "Electrical trench details with powder coated galvanised steel straps, stringers and flat sections.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3124,
+          "height": 2219
         }
       ],
       "sources": [
@@ -597,9 +686,10 @@
       "summary": "A 20 m high pharmaceutical logistics centre built around temperature-controlled storage at a range of set points, with annexure buildings and provision for future expansion of NUPCO's supply needs.",
       "description": "A 20 m high warehouse for the storage and distribution of medical supplies and equipment, including annexure buildings and infrastructure works on site. The warehouse includes temperature-controlled storage areas with a variety of temperature ranges, along with provision for future expansion to accommodate NUPCO's future needs.",
       "highlights": [
-        "20 m high pharmaceutical warehouse, 35,000 m²",
+        "20 m high pharmaceutical logistics warehouse, 35,000 m²",
         "Temperature-controlled storage across a variety of temperature ranges",
-        "Annexure buildings and full on-site infrastructure works",
+        "General arrangement with the full racking layout, office block and dock run",
+        "Annexure buildings and full on-site infrastructure",
         "Designed for future expansion as NUPCO's requirements grow"
       ],
       "image": "/projects/nupco-al-jouf/01-facade.jpg",
@@ -778,37 +868,59 @@
       ],
       "drawings": [
         {
-          "src": "/drawings/placeholder-01.jpg",
-          "alt": "Placeholder drawing sheet 01 (general arrangement) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
-          "label": "Drawing / 01",
-          "title": "General Arrangement",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/nupco-al-jouf/drawings/01-general-arrangement.jpg",
+          "alt": "General arrangement of the warehouse showing the racking layout, the office and support block, and the loading dock run along the south face.",
+          "label": "Drawing / 1006",
+          "title": "General Arrangement Layout",
+          "caption": "General arrangement of the warehouse showing the racking layout, the office and support block, and the loading dock run along the south face.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-02.jpg",
-          "alt": "Placeholder drawing sheet 02 (sections and elevations) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
-          "label": "Drawing / 02",
-          "title": "Sections & Elevations",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/nupco-al-jouf/drawings/02-general-arrangement-part-a.jpg",
+          "alt": "General arrangement sheet covering part of the warehouse floor plate and the adjoining support areas.",
+          "label": "Drawing / 1007",
+          "title": "General Arrangement - Part A",
+          "caption": "General arrangement sheet covering part of the warehouse floor plate and the adjoining support areas.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-03.jpg",
-          "alt": "Placeholder drawing sheet 03 (details and schedules) for NUPCO — Al Jouf Distribution Centre - issued plans will appear here",
-          "label": "Drawing / 03",
-          "title": "Details & Schedules",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/nupco-al-jouf/drawings/03-roof-plan.jpg",
+          "alt": "Roof plan of the warehouse over the main general layout, showing the structural bays and roof zones.",
+          "label": "Drawing / 1183",
+          "title": "Roof Plan - General Layout",
+          "caption": "Roof plan of the warehouse over the main general layout, showing the structural bays and roof zones.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/nupco-al-jouf/drawings/04-roof-plan-part-b.jpg",
+          "alt": "Roof plan sheet covering the adjoining bay and the external platform areas.",
+          "label": "Drawing / 1184",
+          "title": "Roof Plan - Part B",
+          "caption": "Roof plan sheet covering the adjoining bay and the external platform areas.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/nupco-al-jouf/drawings/05-stair-sections.jpg",
+          "alt": "Stair sections SS1, SS2 and SS3 with the associated railing, balustrade and stainless steel handrail details.",
+          "label": "Drawing / 5001",
+          "title": "Stair Sections & Railings",
+          "caption": "Stair sections SS1, SS2 and SS3 with the associated railing, balustrade and stainless steel handrail details.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 2715,
+          "height": 1926
         }
       ],
       "sources": [
