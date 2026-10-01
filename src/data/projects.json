@@ -842,8 +842,9 @@
       "highlights": [
         "14 m high steel structure logistics warehouse, 50,600 m²",
         "One-stop-shop model — bulk storage and distribution in a single facility",
-        "Food, OS&E and consumables storage across a multi-tenant inventory",
-        "Inserted mezzanine office and fitted high-bay pallet racking"
+        "Cold store and chilling plant with insulated wall, floor and ceiling build-ups",
+        "Driver marshalling area and logistics support office within the same facility",
+        "Issued architectural, interior and landscape drawing sheets"
       ],
       "image": "/projects/red-sea-central-distribution-center/03-warehouse-interior.jpg",
       "heroImage": "/projects/red-sea-central-distribution-center/02-office-mezzanine.jpg",
@@ -889,37 +890,81 @@
       ],
       "drawings": [
         {
-          "src": "/drawings/placeholder-01.jpg",
-          "alt": "Placeholder drawing sheet 01 (general arrangement) for Red Sea Central Distribution Center - issued plans will appear here",
-          "label": "Drawing / 01",
-          "title": "General Arrangement",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/red-sea-central-distribution-center/drawings/01-cold-store-plans.jpg",
+          "alt": "Cold store floor plans covering ground, mezzanine and upper levels, the chilling plant, driver marshalling and the concrete walls and paving.",
+          "label": "Drawing / AR-50516",
+          "title": "Cold Store Plans",
+          "caption": "Cold store floor plans covering ground, mezzanine and upper levels, the chilling plant, driver marshalling and the concrete walls and paving.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-02.jpg",
-          "alt": "Placeholder drawing sheet 02 (sections and elevations) for Red Sea Central Distribution Center - issued plans will appear here",
-          "label": "Drawing / 02",
-          "title": "Sections & Elevations",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/red-sea-central-distribution-center/drawings/02-section-gl-4-5.jpg",
+          "alt": "Cross section through the chilling plant facility at gridlines 4 and 5.",
+          "label": "Drawing / AR-50518",
+          "title": "Cross Section GL(4 & 5)",
+          "caption": "Cross section through the chilling plant facility at gridlines 4 and 5.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
         },
         {
-          "src": "/drawings/placeholder-03.jpg",
-          "alt": "Placeholder drawing sheet 03 (details and schedules) for Red Sea Central Distribution Center - issued plans will appear here",
-          "label": "Drawing / 03",
-          "title": "Details & Schedules",
-          "caption": "Issued plans will appear here.",
+          "src": "/projects/red-sea-central-distribution-center/drawings/03-section-gl-6-7.jpg",
+          "alt": "Cross section through the chilling plant facility at gridlines 6 and 7.",
+          "label": "Drawing / AR-50521",
+          "title": "Cross Section GL(6 & 7)",
+          "caption": "Cross section through the chilling plant facility at gridlines 6 and 7.",
           "kind": "drawing",
-          "placeholder": true,
-          "width": 1684,
-          "height": 1190
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/drawings/04-chill-room-details.jpg",
+          "alt": "Wall and floor detail sections at the chill room, showing the insulated envelope build-up.",
+          "label": "Drawing / AR-50522",
+          "title": "Chill Room Wall & Floor Details",
+          "caption": "Wall and floor detail sections at the chill room, showing the insulated envelope build-up.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/drawings/05-cold-store-sections.jpg",
+          "alt": "Typical cold store floor sections with the insulated wall, floor and ceiling construction details.",
+          "label": "Drawing / ID-00129",
+          "title": "Cold Store Floor Sections",
+          "caption": "Typical cold store floor sections with the insulated wall, floor and ceiling construction details.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/drawings/06-substation-ga.jpg",
+          "alt": "Substation room and electrical general arrangement sheets with the associated equipment and transformer details.",
+          "label": "Drawing / ID-40002",
+          "title": "Substation & Electrical General Arrangement",
+          "caption": "Substation room and electrical general arrangement sheets with the associated equipment and transformer details.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3400,
+          "height": 2406
+        },
+        {
+          "src": "/projects/red-sea-central-distribution-center/drawings/07-landscape-layout.jpg",
+          "alt": "Landscape layout for the site with the paving, gravel and hardscape legend and key plan.",
+          "label": "Drawing / LS-10630",
+          "title": "Landscape Layout",
+          "caption": "Landscape layout for the site with the paving, gravel and hardscape legend and key plan.",
+          "kind": "drawing",
+          "placeholder": false,
+          "width": 3336,
+          "height": 2369
         }
       ],
       "sources": [
