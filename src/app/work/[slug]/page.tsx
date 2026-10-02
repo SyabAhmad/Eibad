@@ -167,7 +167,19 @@ export default async function ProjectPage({
               </div>
             ))}
           </div>
+        </section>
 
+        {/* The design renders lead the visual sequence. Where a project has none,
+            the featured photograph simply becomes the first image on the page. */}
+        {project.renders && project.renders.length > 0 && (
+          <RendersCarousel
+            renders={project.renders}
+            projectNumber={project.number}
+            projectTitle={project.shortTitle}
+          />
+        )}
+
+        <section className="case-feature" aria-label="Featured project image">
           <div className="case-hero__image">
             {project.heroImage ? (
               <Image
@@ -185,14 +197,6 @@ export default async function ProjectPage({
             <span>FEATURED IMAGE / {project.number}</span>
           </div>
         </section>
-
-        {project.renders && project.renders.length > 0 && (
-          <RendersCarousel
-            renders={project.renders}
-            projectNumber={project.number}
-            projectTitle={project.shortTitle}
-          />
-        )}
 
         <section className="case-overview">
           <p className="eyebrow">PROJECT OVERVIEW</p>

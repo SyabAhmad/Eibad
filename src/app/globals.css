@@ -1340,6 +1340,7 @@ button {
 }
 
 .case-hero,
+.case-feature,
 .case-overview,
 .case-sequence,
 .case-next {
@@ -1401,10 +1402,13 @@ button {
   text-transform: uppercase;
 }
 
+.case-feature {
+  padding-bottom: clamp(5rem, 10vw, 9rem);
+}
+
 .case-hero__image {
   position: relative;
   min-height: clamp(28rem, 70vh, 52rem);
-  margin-top: clamp(3rem, 7vw, 7rem);
   overflow: hidden;
   background: #28231f;
 }
@@ -2575,7 +2579,10 @@ button {
 
   .case-hero__image {
     min-height: 24rem;
-    margin-top: 3rem;
+  }
+
+  .case-feature {
+    padding-bottom: 5rem;
   }
 
   .case-overview {
