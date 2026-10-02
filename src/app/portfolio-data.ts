@@ -9,6 +9,14 @@ export type ProjectImage = {
   kind: "photo" | "render" | "drawing" | "model" | "aerial";
   /** Set when the visual is not Eibad's own work, e.g. designer-issued renders. */
   credit: string | null;
+  /**
+   * Set when the served file is a regenerated version of the source photograph
+   * rather than the photograph itself. Surfaced as a visible disclosure so the
+   * gallery never implies the pixels are untouched originals.
+   */
+  enhanced?: boolean;
+  /** Named tool, shown with the disclosure so the claim is auditable. */
+  enhancedWith?: string;
   width: number;
   height: number;
 };

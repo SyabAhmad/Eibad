@@ -250,6 +250,9 @@ export default async function ProjectPage({
                 <span>
                   {item.kind === "photo" ? "PROJECT DOCUMENTATION" : item.kind}
                   {item.credit ? ` — ${item.credit}` : ""}
+                  {item.enhanced
+                    ? ` — ENHANCED IMAGE${item.enhancedWith ? ` (${item.enhancedWith})` : ""}, NOT THE AS-PHOTOGRAPHED ORIGINAL`
+                    : ""}
                 </span>
               </figcaption>
             </figure>

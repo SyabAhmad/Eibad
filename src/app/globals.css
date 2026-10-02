@@ -2978,13 +2978,6 @@ button {
   background-size: 2.5rem 2.5rem;
 }
 
-.about-section__blueprint::after {
-  position: absolute;
-  inset: 12% 10%;
-  border: 1px solid rgba(183, 154, 128, 0.5);
-  content: "";
-}
-
 .about-section__blueprint > span,
 .about-section__blueprint > strong,
 .about-section__built > span,
@@ -3009,49 +3002,30 @@ button {
   color: var(--paper);
 }
 
-.about-section__blueprint-plan {
+.about-section__built-photo {
   position: absolute;
   z-index: 1;
-  inset: 22% 18%;
+  padding: 0.5rem;
+  inset: 14% 10%;
+  background: #f4f2ee;
 }
 
-.blueprint-line {
+.about-section__built-photo img {
+  object-fit: cover;
+  filter: contrast(1.06) saturate(0.9);
+}
+
+.about-section__blueprint-sheet {
   position: absolute;
-  display: block;
-  background: rgba(241, 239, 234, 0.65);
+  z-index: 1;
+  padding: 0.5rem;
+  inset: 14% 10%;
+  background: #f4f2ee;
 }
 
-.blueprint-line--horizontal {
-  top: 20%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-}
-
-.blueprint-line--horizontal.blueprint-line--offset {
-  top: 70%;
-}
-
-.blueprint-line--vertical {
-  top: 0;
-  left: 32%;
-  width: 1px;
-  height: 100%;
-}
-
-.blueprint-line--vertical.blueprint-line--offset {
-  left: 68%;
-}
-
-.about-section__blueprint-plan b {
-  position: absolute;
-  top: 42%;
-  left: 42%;
-  color: var(--sand);
-  font-size: 0.48rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  white-space: nowrap;
+.about-section__blueprint-sheet img {
+  object-fit: cover;
+  filter: contrast(1.06);
 }
 
 .about-section__reality-arrow {
@@ -3062,33 +3036,7 @@ button {
 }
 
 .about-section__built {
-  background:
-    linear-gradient(135deg, rgba(183, 154, 128, 0.72), transparent 58%),
-    linear-gradient(45deg, #8b7866, #d2c0aa 48%, #5f5145);
-}
-
-.about-section__built::before,
-.about-section__built::after {
-  position: absolute;
-  content: "";
-}
-
-.about-section__built::before {
-  right: -10%;
-  bottom: -30%;
-  width: 90%;
-  height: 80%;
-  border: 1px solid rgba(17, 17, 17, 0.35);
-  transform: skewY(-18deg);
-}
-
-.about-section__built::after {
-  top: 22%;
-  right: 12%;
-  width: 38%;
-  height: 34%;
-  border: 1px solid rgba(17, 17, 17, 0.28);
-  box-shadow: -5rem 2rem 0 -1px rgba(17, 17, 17, 0.18);
+  background: #201d1a;
 }
 
 .about-section__reality-caption {

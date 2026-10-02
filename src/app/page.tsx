@@ -459,20 +459,29 @@ export default function Home() {
               >
                 <div className="about-section__blueprint">
                   <span>TECHNICAL DRAWING</span>
-                  <div className="about-section__blueprint-plan" aria-hidden="true">
-                    <i className="blueprint-line blueprint-line--horizontal" />
-                    <i className="blueprint-line blueprint-line--vertical" />
-                    <i className="blueprint-line blueprint-line--horizontal blueprint-line--offset" />
-                    <i className="blueprint-line blueprint-line--vertical blueprint-line--offset" />
-                    <b>PLAN / SECTION</b>
+                  <div className="about-section__blueprint-sheet">
+                    <Image
+                      src="/about/counter-drawing-40492.jpg"
+                      alt="Issued counter detail layout drawing for the Riyadh Air Training Centre, showing counter sizes, setting out dimensions and sections"
+                      fill
+                      sizes="(max-width: 900px) 100vw, 34vw"
+                    />
                   </div>
-                  <strong>DRAWING</strong>
+                  <strong>DRAWING / SWD-40492</strong>
                 </div>
                 <div className="about-section__reality-arrow" aria-hidden="true">
                   →
                 </div>
                 <div className="about-section__built">
                   <span>BUILT SPACE</span>
+                  <div className="about-section__built-photo">
+                    <Image
+                      src="/projects/nupco-al-jouf/09-facade-night.jpg"
+                      alt="NUPCO Al Jouf distribution centre after dark, with canopy lighting running across the loading elevation"
+                      fill
+                      sizes="(max-width: 900px) 100vw, 34vw"
+                    />
+                  </div>
                   <strong>DELIVERY / COORDINATION</strong>
                 </div>
               </div>

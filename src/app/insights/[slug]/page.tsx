@@ -102,7 +102,7 @@ export default async function InsightArticlePage({
       name: siteName,
       url: absoluteUrl("/"),
     },
-    image: absoluteUrl("/eibad-profile.jpg"),
+    image: absoluteUrl("/eibad-avatar.jpg"),
     keywords: article.keywords.join(", "),
     isPartOf: {
       "@type": "Blog",
@@ -181,7 +181,7 @@ export default async function InsightArticlePage({
             <aside className="article-aside">
               <div className="article-aside__author">
                 <Image
-                  src="/eibad-profile.jpg"
+                  src="/eibad-avatar.jpg"
                   alt="Eibad Hassan Shah"
                   width={56}
                   height={56}

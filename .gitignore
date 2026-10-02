@@ -50,6 +50,9 @@ next-env.d.ts
 /public/RED SEA - CTH and QC lab/
 /public/Riyadh Air Academy/
 
+# local comparison/review tool. Never deploy.
+/local-review/
+
 # large reference documents (~139MB total, marked confidential by their authors).
 # Kept locally for reference; excluded so they are never pushed or deployed.
 /public/YMCO Company Profile (1).pdf

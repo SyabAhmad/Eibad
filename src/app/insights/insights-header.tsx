@@ -6,7 +6,7 @@ export function InsightsHeader({ compact = false }: { compact?: boolean }) {
     <header className={`insights-header ${compact ? "insights-header--compact" : ""}`}>
       <Link className="insights-header__brand" href="/">
         <Image
-          src="/eibad-profile.jpg"
+          src="/eibad-avatar.jpg"
           alt="Eibad Hassan Shah"
           width={44}
           height={44}

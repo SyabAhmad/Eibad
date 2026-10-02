@@ -969,11 +969,13 @@
           "label": "Exterior / 01",
           "caption": "South elevation — the full 14 m steel frame read as a single horizontal band.",
           "sourceFile": "public/CDC/Screenshot 2026-09-28 222458.png",
-          "width": 1064,
-          "height": 520,
+          "width": 1473,
+          "height": 720,
           "format": "png",
           "kind": "photo",
-          "credit": null
+          "credit": null,
+          "enhanced": true,
+          "enhancedWith": "gemini-3-pro-image"
         },
         {
           "src": "/projects/red-sea-central-distribution-center/02-office-mezzanine.jpg",
@@ -981,11 +983,13 @@
           "label": "Interior / 02",
           "caption": "Inserted mezzanine office overlooking the loading floor.",
           "sourceFile": "public/CDC/Screenshot 2026-09-28 222533.png",
-          "width": 764,
-          "height": 418,
+          "width": 1404,
+          "height": 768,
           "format": "png",
           "kind": "photo",
-          "credit": null
+          "credit": null,
+          "enhanced": true,
+          "enhancedWith": "gemini-3-pro-image"
         },
         {
           "src": "/projects/red-sea-central-distribution-center/03-warehouse-interior.jpg",
@@ -993,11 +997,13 @@
           "label": "Interior / 03",
           "caption": "High-bay racking and mezzanine structure inside the warehouse.",
           "sourceFile": "public/CDC/Screenshot 2026-09-28 222552.png",
-          "width": 664,
-          "height": 413,
+          "width": 1312,
+          "height": 816,
           "format": "png",
           "kind": "photo",
-          "credit": null
+          "credit": null,
+          "enhanced": true,
+          "enhancedWith": "gemini-3-pro-image"
         }
       ],
       "drawings": [
