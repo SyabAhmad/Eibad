@@ -19,6 +19,7 @@ import {
   workshops,
 } from "@/app/portfolio-data";
 import ProjectCardCarousel from "@/app/project-card-carousel";
+import ArchiveMarquee from "@/app/archive-marquee";
 
 const navItems = [
   { label: "Work", href: "#work" },
@@ -855,6 +856,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <ArchiveMarquee />
 
         <section className="contact-section" id="contact">
           <div className="contact-section__backdrop" aria-hidden="true">
