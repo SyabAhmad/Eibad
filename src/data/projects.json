@@ -333,6 +333,18 @@
           "width": 1280,
           "height": 576,
           "format": "jpeg"
+        },
+        {
+          "src": "/projects/riyadh-air-training-centre/16-counter-fitout.jpg",
+          "alt": "Terrazzo counters being fitted out in the reception hall, with exposed ductwork and MEP services overhead and the glazed entrance beyond.",
+          "label": "Interior / 16",
+          "caption": "Terrazzo counters during fit out — the built counterpart of drawing SWD-40492.",
+          "kind": "photo",
+          "credit": null,
+          "sourceFile": "Downloads/Counter real.jpeg",
+          "width": 1600,
+          "height": 747,
+          "format": "jpeg"
         }
       ],
       "drawings": [

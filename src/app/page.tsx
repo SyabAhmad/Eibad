@@ -476,13 +476,13 @@ export default function Home() {
                   <span>BUILT SPACE</span>
                   <div className="about-section__built-photo">
                     <Image
-                      src="/projects/nupco-al-jouf/09-facade-night.jpg"
-                      alt="NUPCO Al Jouf distribution centre after dark, with canopy lighting running across the loading elevation"
+                      src="/projects/riyadh-air-training-centre/16-counter-fitout.jpg"
+                      alt="Terrazzo counters being fitted out in the Riyadh Air Training Centre reception hall, with exposed ductwork and MEP services overhead"
                       fill
                       sizes="(max-width: 900px) 100vw, 34vw"
                     />
                   </div>
-                  <strong>DELIVERY / COORDINATION</strong>
+                  <strong>COUNTERS / FIT OUT</strong>
                 </div>
               </div>
 
