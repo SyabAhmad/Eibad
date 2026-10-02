@@ -225,7 +225,7 @@ export const projectArticles: InsightArticle[] = [
     readingTime: "8 MIN READ",
     publishedAt: "2026-09-28",
     updatedAt: "2026-09-28",
-    projectSlug: "riyadh-air-training-centre",
+    projectSlug: "riyadh-air-academy",
     sourceNote:
       "Project facts (client, area, scope, status) are published by Youssef Marroun Contracting Co. in its company profile. Interior visuals and elevation information are by Stylus ASD / Savills and are their work, not mine — the Stylus renders are credited accordingly and are not presented as my visualisation. Statements about my own contribution are marked for verification.",
     keywords: [
