@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:media && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:media": "node --experimental-strip-types scripts/check-media.mts"
   },
   "dependencies": {
     "next": "16.3.6",
