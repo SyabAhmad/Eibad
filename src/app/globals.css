@@ -5102,6 +5102,114 @@ button {
   text-transform: uppercase;
 }
 
+/* ---------------------------------------------------------------------------
+   Floating actions: back-to-top, and a WhatsApp CTA that arrives late.
+
+   Both sit above the content and below the fixed nav. They are hidden with
+   opacity and a small offset rather than display:none so the entrance can be
+   transitioned, but pointer events are off until visible so an invisible button
+   can never be clicked or reached by keyboard.
+--------------------------------------------------------------------------- */
+
+.floating-actions {
+  position: fixed;
+  z-index: 40;
+  right: clamp(1rem, 2.5vw, 2rem);
+  bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  display: grid;
+  justify-items: end;
+  gap: 0.6rem;
+}
+
+.floating-actions__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  background: rgba(17, 17, 17, 0.86);
+  color: var(--paper);
+  cursor: pointer;
+  font: inherit;
+  opacity: 0;
+  pointer-events: none;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateY(10px);
+  transition:
+    opacity 320ms ease,
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 220ms ease,
+    color 220ms ease;
+}
+
+.floating-actions__btn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.floating-actions__btn:hover,
+.floating-actions__btn:focus-visible {
+  border-color: rgba(183, 154, 128, 0.7);
+  color: var(--sand);
+  outline: none;
+}
+
+.floating-actions__btn:focus-visible {
+  box-shadow: 0 0 0 2px rgba(183, 154, 128, 0.45);
+}
+
+.floating-actions__btn svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.floating-actions__btn--top {
+  width: 2.85rem;
+  height: 2.85rem;
+  padding: 0;
+}
+
+.floating-actions__btn--contact {
+  gap: 0.55rem;
+  height: 2.85rem;
+  padding: 0 1rem;
+  border-color: rgba(183, 154, 128, 0.45);
+  color: var(--sand);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.floating-actions__btn--contact:hover,
+.floating-actions__btn--contact:focus-visible {
+  background: rgba(183, 154, 128, 0.14);
+  color: var(--paper);
+}
+
+@media (max-width: 700px) {
+  .floating-actions__btn--contact span {
+    display: none;
+  }
+
+  .floating-actions__btn--contact {
+    width: 2.85rem;
+    padding: 0;
+  }
+}
+
+/* The entrance is the only motion here, so drop it entirely. */
+@media (prefers-reduced-motion: reduce) {
+  .floating-actions__btn {
+    transition: none;
+    transform: none;
+  }
+}
+
 .contact-footer {
   position: absolute;
   z-index: 2;

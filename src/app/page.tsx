@@ -20,6 +20,7 @@ import {
 } from "@/app/portfolio-data";
 import ProjectCardCarousel from "@/app/project-card-carousel";
 import ArchiveMarquee from "@/app/archive-marquee";
+import FloatingActions from "@/app/floating-actions";
 
 const navItems = [
   { label: "Work", href: "#work" },
@@ -966,6 +967,8 @@ export default function Home() {
           </footer>
         </section>
       </main>
+
+      <FloatingActions />
     </div>
   );
 }
